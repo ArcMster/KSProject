@@ -13,8 +13,9 @@ class Comments(models.Model):
 
 
 class Email_list(models.Model):
-    name = models.TextField(max_length=30)
+    name = models.CharField(max_length=30)
     email = models.EmailField(max_length=30)
 
     def __str__(self):
         return self.name
+        
