@@ -1,0 +1,93 @@
+
+/*------------------------------------------------- */
+/* =  Single Project */
+/*------------------------------------------------- */
+
+section.single-project-section {
+    img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .single-content {
+        margin-left: -15px;
+        margin-right: -15px;
+        .project-content {
+            padding: 35px;
+            background: #f9f9f9;
+            margin-bottom: 40px;
+            h2 {
+                font-size: 18px;
+                margin-bottom: 30px;
+            }
+            p {
+                margin-bottom: 30px;
+            }
+            ul.social-icons {
+                @extend .reset-elem;
+                li {
+                    display: inline-block;
+                    margin-right: 6px;
+                    a {
+                        width: 40px;
+                        height: 40px;
+                        line-height: 36px;
+                        @include border-radius(50%);
+                        background: transparent;
+                        color: $primary-color;
+                        font-size: 16px;
+                        text-align: center;
+                        border: 2px solid #efefef;
+                    }
+                    a:hover {
+                        background: $primary-color;
+                        color: #fff;
+                        border-color: transparent;
+                    }
+                }
+            }
+            ul.detail-list {
+                @extend .reset-elem;
+                margin-bottom: 40px;
+                li {
+                    @extend .paragraph;
+                    display: block;
+                    margin-bottom: 5px;
+                    span {
+                        color: $title-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.pag-page {
+    overflow: hidden;
+    margin-bottom: 80px;
+    a {
+        color: $text-color;
+        font-size: 12px;
+        font-family: $font-alternative;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        i {
+            font-size: 15px;
+            color: #aaa;
+        }
+    }
+    a.prev-project {
+        float: left;
+        i {
+            margin-right: 18px;
+        }
+    }
+    a.next-project {
+        float: right;
+        i {
+            margin-left: 18px;
+        }
+    }
+    a:hover {
+        opacity: 0.7;
+    }
+}

@@ -1,0 +1,36 @@
+
+/*------------------------------------------------- */
+/* =  Statistic sections*/
+/*------------------------------------------------- */
+
+section.statistic-section {
+    padding: 100px 0;
+    background: #333333;
+    .statistic-box {
+        overflow: hidden;
+    }
+    .statistic-post {
+        float: left;
+        width: 20%;
+        padding-left: 30px;
+        i {
+            color: #fff;
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+        p {
+            color: #fff;
+            margin-bottom: 0;
+        }
+        h2 {
+            margin-bottom: 10px;
+        }
+        span.timer {
+            color: $primary-color;
+            font-size: 46px;
+            font-family: $font-default;
+            font-weight: 700;
+            margin: 0;
+        }
+    }
+}

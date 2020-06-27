@@ -1,0 +1,86 @@
+
+/*------------------------------------------------- */
+/* =  Contact */
+/*------------------------------------------------- */
+
+section.contact-form-section {
+    padding: 50px 0 0;
+    position: relative;
+    .contact-form-box {
+        max-width: 100%;
+        h1 {
+            font-size: 24px;
+            font-weight: 600;
+        }
+        #contact-form {
+            margin: 0;
+            input[type="text"],
+            textarea {
+                display: block;
+                width: 100%;
+                padding: 12px 20px;
+                background: transparent;
+                color: $text-color;
+                font-size: 12px;
+                font-family: $font-default;
+                outline: none;
+                border: 1px solid #cccccc;
+                margin: 0 0 30px;
+                @include transition(0.2s);
+            }
+            input[type="text"]:focus,
+            textarea:focus {
+                border: 1px solid $primary-color;
+                background: transparent;
+            }
+            textarea {
+                height: 130px;
+            }
+            input[type="submit"] {
+                color: $primary-color;
+                font-size: 12px;
+                font-family: $font-default;
+                font-weight: 500;
+                padding: 10px 22px 10px;
+                text-transform: uppercase;
+                border: 2px solid $primary-color;
+                background: transparent;
+                outline: none;
+                @include transition(0.2s);
+            }
+            input[type="submit"]:hover {
+                background: $primary-color;
+                color: #ffffff;
+            }
+        }
+    }
+    .info-box {
+        padding-top: 15px;
+        h2 {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+        p {
+            font-size: 13px;
+            span {
+                color: #333333;
+            }
+        }
+    }
+    .info-box.address {
+        p {
+            padding-left: 20px;
+            margin-bottom: 0;
+            span {
+                display: inline-block;
+                margin-left: -20px;
+                margin-right: 4px;
+            }
+        }
+    }
+}
+
+#map {
+    width: 100%;
+    height: 500px;
+}

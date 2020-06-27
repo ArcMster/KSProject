@@ -1,0 +1,297 @@
+
+/*-------------------------------------------------- */
+/* 1. Isotope filtering */
+/*------------------------------------------------- */
+.isotope-item {
+    z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+    pointer-events: none;
+    z-index: 1;
+}
+
+.isotope, .isotope .isotope-item {
+    // change duration value to whatever you like
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+
+.isotope {
+    -webkit-transition-property: height, width;
+    -moz-transition-property: height, width;
+    transition-property: height, width;
+}
+
+.isotope .isotope-item {
+    -webkit-transition-property: -webkit-transform, opacity;
+    -moz-transition-property: -moz-transform, opacity;
+    transition-property: transform, opacity;
+}
+
+/*-----------------------------------------------------------------------------
+ *
+ *KENBURNER RESPONSIVE BASIC STYLES OF HTML DOCUMENT
+ *
+ *Screen Stylesheet
+ *
+ *version:    1.0
+ *date:       07/27/11
+ *author:     themepunch
+ *email:      support@themepunch.com
+ *website:    http://www.themepunch.com */
+/*----------------------------------------------------------------------------- */
+
+.boxedcontainer {
+    max-width: 1170px;
+    margin: auto;
+    padding: 0px 30px;
+}
+
+/*********************************************
+ *    -   SETTINGS FOR BANNER CONTAINERS  -
+ ********************************************* */
+
+.tp-banner-container {
+    width: 100%;
+    position: relative;
+    padding: 0;
+}
+
+.tp-banner {
+    width: 100%;
+    position: relative;
+}
+
+.tp-banner-fullscreen-container {
+    width: 100%;
+    position: relative;
+    padding: 0;
+}
+
+/*------------------------------------------------- */
+/* =  General */
+/*------------------------------------------------- */
+
+#content {
+    margin-left: 325px;
+    padding: 40px;
+}
+
+.container {
+    max-width: 100%;
+}
+
+#container {
+    overflow: hidden;
+}
+
+p {
+    @extend .paragraph;
+}
+
+h1 {
+    @extend .heading1;
+}
+
+h2 {
+    @extend .heading2;
+}
+
+h3 {
+    @extend .heading3;
+}
+
+a {
+    @extend .anchor;
+}
+
+
+.title-section {
+    text-align: center;
+    margin-bottom: 90px;
+    position: relative;
+    span {
+        color: $third-color;
+        font-size: 12px;
+        font-family: $font-default;
+        font-weight: 500;
+        text-transform: uppercase;
+        display: inline-block;
+        opacity: 0.5;
+        margin: 0 0 10px;
+    }
+    p {
+        font-size: 13px;
+        color: $primary-color;
+        line-height: 24px;
+        margin-bottom: 0;
+    }
+}
+
+.title-section.white-style {
+    h1 {
+        color: #ffffff;
+    }
+}
+
+.slider-section {
+    overflow: hidden;
+    .tp-caption.NotGeneric-Title {
+        font-size: 40px;
+        font-weight: 700 !important;
+        color: #fff;
+        font-family: $font-default;
+        letter-spacing: inherit;
+    }
+    .tp-caption.NotGeneric-SubTitle {
+        font-size: 14px;
+        font-family: $font-alternative !important;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 2px;
+    }
+}
+#full-fixer {
+    height: 80px;
+    position:absolute;
+    right: -9999px;
+}
+#content {
+    .tp-bullet {
+        width: 10px;
+        height: 10px;
+        @include border-radius(50%);
+        background: rgba(255,255,255,0.5);
+    }
+    .tp-bullet.selected {
+        background: #fff;
+        width: 16px;
+        height: 16px;
+        margin-left: -3px;
+        margin-top: -2px;
+    }
+}
+
+.fullscreen-container {
+    padding-left: 330px !important;
+}
+
+a.button-white {
+    color: $primary-color;
+    font-size: 11px;
+    font-family: $font-default;
+    text-transform: uppercase;
+    padding: 9px 50px;
+    background: #fff;
+    font-weight: 600;
+    @include border-radius(24px);
+    @include transition(0.2s);
+}
+
+a.button-white:hover {
+    color: #fff;
+    background: $primary-color;
+}
+
+a.button-one {
+    color: #000;
+    font-size: 12px;
+    font-family: $font-default;
+    text-transform: uppercase;
+    padding: 12px 45px;
+    background: $primary-color;
+    font-weight: 500;
+    @include border-radius(24px);
+    @include transition(0.2s);
+    margin: 0;
+}
+
+a.button-one:hover {
+    color: #fff;
+    background: $third-color;
+}
+
+.center-button {
+    text-align: center;
+}
+
+a.button-two {
+    color: $second-color;
+    font-size: 13px;
+    font-family: $font-default;
+    font-weight: 500;
+    padding: 13px 20px 10px;
+    text-transform: uppercase;
+    border: 2px solid $second-color;
+    @include border-radius(25px);
+}
+a.button-two:hover {
+    background: $second-color;
+    color: #fff;
+}
+
+button.mfp-close, button.mfp-arrow, a.zoom {
+    outline: none;
+}
+
+section.page-banner-section {
+    padding: 100px;
+    @include retina('../upload/banners/1.jpg', 2, cover, center center no-repeat);
+    .border-line-box {
+        height: 300px;
+        border: 2px solid $primary-color;
+        border-bottom: none;
+    }
+    .page-box-title {
+        overflow: hidden;
+        margin-top: -30px;
+    }
+    h1 {
+        display: inline-block;
+        font-size: 48px;
+        line-height: 60px;
+        font-weight: 700;
+        color: #ffffff;
+        font-family: $font-default;
+        margin-bottom: 30px;
+        position: relative;
+    }
+    h1:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 100%;
+        margin-right: 16px;
+        width: 1000px;
+        height: 0;
+        border-top: 2px solid $primary-color;
+    }
+    h1:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        margin-left: 16px;
+        width: 2000px;
+        border-top: 2px solid $primary-color;
+    }
+    p {
+        color: #f9f9f9;
+        font-size: 18px;
+        font-family: $font-alternative;
+        line-height: 30px;
+        margin-bottom: 0;
+    }
+}
+
+section.page-banner-section.portfolio-ban {
+    @include retina('../upload/banners/3.jpg', 2, cover, center center no-repeat);
+}
+
+section.page-banner-section.blog-ban {
+    @include retina('../upload/banners/4.jpg', 2, cover, center center no-repeat);
+}
+
+

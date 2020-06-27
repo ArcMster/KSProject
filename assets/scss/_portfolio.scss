@@ -1,0 +1,112 @@
+
+/*------------------------------------------------- */
+/* =  Portfolio */
+/*------------------------------------------------- */
+
+section.portfolio-section {
+	padding-top: 75px;
+	overflow: hidden;
+	.title-section {
+		margin-bottom: 36px;
+	}
+	.portfolio-box {
+		.project-post {
+			width: 25%;
+			position: relative;
+			padding: 5px;
+			img {
+				width: 100%;
+				height: auto;
+			}
+			.hover-box {
+				position: absolute;
+				top: 5px;
+				left: 5px;
+				right: 5px;
+				bottom: 5px;
+				background: $primary-color-trans;
+				text-align: center;
+				opacity: 0;
+				@include transition(0.2s);
+				.inner-hover {
+					z-index: 2;
+					position: absolute;
+					width: 100%;
+					top: 50%;
+					left: 0;
+					margin-top: -20px;
+					h2 {
+						font-size: 18px;
+						font-weight: 600;
+						margin-bottom: 5px;
+						a {
+							color: #fff;
+						}
+						a:hover {
+							opacity: 0.7;
+						}
+					}
+					span {
+						@extend .paragraph;
+						color: #fff;
+						font-size: 12px;
+						font-style: italic;
+						margin-bottom: 0;
+					}
+				}
+			}
+			.hover-box:after {
+				content: '';
+				position: absolute;
+				top: 17px;
+				left: 17px;
+				bottom: 17px;
+				right: 17px;
+				border: 2px solid #fff;
+			}
+		}
+		.project-post:hover {
+			.hover-box {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+ul.filter {
+	@extend .reset-elem;
+	text-align: center;
+	margin-bottom: 40px;
+	li {
+		display: inline-block;
+		padding: 0 0 0 20px;
+		margin-bottom: 20px;
+		a {
+			color: #666666;
+			font-size: 14px;
+			font-family: $font-default;
+			padding: 0 10px 6px;
+			border-bottom: 2px solid transparent;
+			text-transform: capitalize;
+		}
+		a:hover,
+		a.active {
+			color: $primary-color;
+			border-bottom: 2px solid $primary-color;
+		}
+	}
+	li:after {
+		content: '|';
+		color: $third-color;
+		font-size: 8px;
+		font-family: $font-alternative;
+		margin-left: 20px;
+	}
+	li:last-child:after {
+		display: none;
+		margin-left: 0;
+	}
+	li:first-child {
+		margin-left: 0;
+	}
+}
