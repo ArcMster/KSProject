@@ -8,6 +8,9 @@ from email.message import EmailMessage
 
 # Create your views here.
 
+def index1(request):
+    return render(request,'index2.html')
+
 #Function to display the home page
 def home(request):
     return render(request,'index.html')
@@ -35,10 +38,10 @@ def map(request):
 #Function to receive user input from contact page and to send an email to the page admin
 def userinput(request):
     user_input = Comments()
-    name = request.GET['name']
-    mail = request.GET['mail']
-    subject = request.GET['subject']
-    comment = request.GET['comment']
+    name = request.POST['name']
+    mail = request.POST['mail']
+    subject = request.POST['subject']
+    comment = request.POST['comment']
     
 
     user_input.name = name

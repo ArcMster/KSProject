@@ -1,152 +1,416 @@
 <!doctype html>
-
-{% load static %}
 <html lang="en" class="no-js">
 <head>
-	<title>Genix</title>
-
+	{% load static %}
+	<title>Map</title>
 	<meta charset="utf-8">
-
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	
 	<link rel="stylesheet" href="{% static 'css/genix-assets.min.css' %}">
 	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
-
 </head>
 <body>
-
 	<!-- Container -->
 	<div id="container">
 		<!-- Header
 		    ================================================== -->
 		<header class="clearfix">
-
 			<div class="logo">
-				<a href="index.html"><img src="{% static 'images/logo.png' %}" alt=""></a>
+				<a href="index.html"><img class="img-responsive" src="{% static 'images/Slice/Side-Menu/logo.png' %}" alt=""></a>
 			</div>
-
 			<a class="elemadded responsive-link" href="#">Menu</a>
-
 			<nav class="nav-menu">
 				<ul class="menu-list">
 					<li><a href="index.html">Home</a></li>
 					<li><a href="about.html">About</a></li>
-					<li><a  class="active" href="map.html">Map</a></li>
-					<!-- <li><a href="blog.html">Media</a></li> -->
+					<li><a class="active" href="map.html">Map</a></li>
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
 			</nav>
-
 			<div class="social-box">
-				<ul class="social-icons">
-					<li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-					<li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-					<li><a class="rss" href="#"><i class="fa fa-rss"></i></a></li>
-					<li><a class="google" href="#"><i class="fa fa-google-plus"></i></a></li>
-					<li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+				<ul class="social-icons text-center">
+					<li><a class="instagram" href="#"><img class="img-responsive" src="{% static 'images/Slice/Side-Menu/instagram.png' %}" alt="instagram image"></a></li>
+					<li><a class="facebook" href="#"><img class="img-responsive" src="{% static 'images/Slice/Side-Menu/facebook.png' %}" alt="facebook image"></a></li>
+					<li><a class="twitter" href="#"><img class="img-responsive" src="{% static 'images/Slice/Side-Menu/twitter.png' %}" alt="twitter image" style="margin-top: 7px"></a></li>
+					<li><a class="linkedin" href="#"><img class="img-responsive" src="{% static 'images/Slice/Side-Menu/linkedin.png' %}" alt="linkedin image"></a></li>
 				</ul>
-			
-				<p>© 2020 KHASquared. All rights reserved.</p>
+				<p>© 2018 KHASquad. All rights reserved.</p>
 			</div>
-
 		</header>
 		<!-- End Header -->
-
 		<!-- content 
 			================================================== -->
 		<div id="content">
-
-			<!-- map 
+			<!-- page-banner-section 
 				================================================== -->
-			<!--<div>
-				<img src="images/mapbg.jpg"  width="100%" height="500">
-			</div>-->
-			<!-- End map -->
-			<section class="page-banner-section-map">
-				
+			<section class="page-banner-section portfolio-ban">
 				<div class="border-line-box"></div>
 				<div class="page-box-title">
-					<div class="container">
-						<!--
-						<h1>Checkout the Map</h1>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
-					</div>-->
+					<div class="container" style="padding-bottom: 40%">
+<!-- 						<h1>Check out The map</h1>
+						<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit ...</p>
+ -->					</div>
 				</div>
-			</section>
-			<!-- contact-form-section 
-				================================================== -->
+			</section>			
+			<div style="position: relative;" class="cover">
+				<img src="{% static 'images/Slice/Map/map.png' %}" class="bg" style="width: auto;max-width: 100%;height: auto;" alt="" >
+				<div class="countries">
+			
+			<!--Egypt-->
 
-				<script>
-					function showme(country,desc,pop,cups,clubs){
-							console.log	($('#'+country).offset())
-							var pos=($('#'+country).offset());
-// $('#hovdiv').css('top',pos.top+250,'left',pos.left+650,'bottom',pos.bottom+100,'right',pos.right-100);
-$('#hovdiv').css("display","block");
-$('#hovdiv').offset({top:(pos.top+1000),left:(pos.left+400)});
-// $('#hovdiv').position().top = pos.top;
-// $('#hovdiv').position().left = pos.left;
-$('#count').text(country);
-$('#desc').text(desc);
-$('#pop').text(pop);
-$('#cups').text(cups);
-$('#clubs').text(clubs);					}
-					function notshowme(){
-						$('#hovdiv').css("display","none");
-					}
-				</script>
-		<style>
-#mp area{
-	cursor: pointer;
-}
-		</style>
+					<div class="egypt" style="position: absolute;bottom:48.5%;left: 53%">
+						<img src="{% static 'images/Slice/Map/egypt.png' %}" alt="" style="max-width:70%;height: auto;">
+					</div>
+					<div class="egypt" id="egypt" style="position: absolute;bottom:37%;left: 52%">
+						<img src="{% static 'images/Slice/Map/flags/egypt-flag.png' %}" alt="" style="max-width:60%;height: auto;">
+					</div>
 
-			<section class="contact-form-section">
-				
-				<img src="{% static 'images/map.jpg' %}" usemap="#image-map" width="100%">
-				<div id="hovdiv" style="position: absolute;
-				width: 300px;
-				height: auto;
-				/* top: 66px; */
-				background: black;
-				padding: 10px;
-				/* left: 100px; */
-				border: #FFF 1px solid;
-				display: none;">
-				<h2 class="text-primary p-3 " style="float:left" id="count">USA</h2><span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
-				<span class="clearfix"></span>
-				<h6 class="text-white " id="desc">lorem ipsum</p>
-				<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
-				
-				<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
-				<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>
-				
+					<div class="eg hovdiv" style="position: absolute;width: 300px;height: auto;left: 53%;bottom:55%; background: black;padding: 10px;/* left: 100px; */border: #FFF 1px solid;display: none;z-index: 2">
+						<h2 class="text-primary p-3 " style="float:left" id="count">EGYPT</h2>
+						<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
+						<span class="clearfix"></span>
+						<h6 class="text-white " id="desc">lorem ipsum</h6>
+						<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
+						<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
+						<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
+					</div>
+
+			<!--Saudi-->
+
+					<div class="saudi"  style="position: absolute;bottom:45.6%;left: 56%">
+						<img src="{% static 'images/Slice/Map/saudi.png' %}" alt="saudi arabia" style="max-width:70%;height: auto;">
+					</div>
+					<div class="saudi" id="saudi" style="position: absolute;bottom:52%;left: 55%">
+						<img src="{% static 'images/Slice/Map/flags/saudi-flag.png' %}" alt="" style="max-width:60%;height: auto;">
+					</div>
+
+					<div class="sa hovdiv" style="position: absolute;width: 300px;height: auto;bottom:50%;left:56%;background: black;padding: 10px;border: #FFF 1px solid;display: none;z-index: 3">
+						<h2 class="text-primary p-3 " style="float:left" id="count">SAUDI ARABIA</h2>
+						<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
+						<span class="clearfix"></span>
+						<h6 class="text-white " id="desc">lorem ipsum</h6>
+						<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
+						<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
+						<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
+					</div>
+
+			<!--qatar-->
+					<div class="qatar"  style="position: absolute;bottom:48%;left: 60.8%">
+						<img src="{% static 'images/Slice/Map/qatar.png' %}" alt="" style="max-width:100%;height: auto;">
+					</div>
+					<div class="qatar" id="qatar" style="position: absolute;bottom:49%;left: 58%">
+						<img src="{% static 'images/Slice/Map/flags/qatar-flag.png' %}" alt="" style="max-width:60%;height: auto;">
+					</div>
+
+					<div class="qa hovdiv"  style="position: absolute;width: 300px;height: auto;bottom:52%;left:61%;background: black;padding: 10px;z-index:4;border: #FFF 1px solid;display: none;">
+						<h2 class="text-primary p-3 " style="float:left" id="count">QATAR</h2>
+						<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
+						<span class="clearfix"></span>
+						<h6 class="text-white " id="desc">lorem ipsum</h6>
+						<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
+						<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
+						<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
+					</div>
+
+			<!--algeria-->
+					<div class="algeria" style="position: absolute;bottom:47.5%;left: 45%">
+						<img src="{% static 'images/Slice/Map/algeria.png' %}" alt="" style="max-width:68%;height: auto;">
+					</div>
+					<div class="algeria" id="algeria" style="position: absolute;bottom:45%;left: 47%">
+						<img src="{% static 'images/Slice/Map/flags/algeria-flag.png' %}" alt="" style="max-width:60%;height: auto;">
+					</div>
+
+					<div class="al hovdiv" style="position: absolute;width: 300px;height: auto;bottom:52%;left:45%;background: black;padding: 10px;border: #FFF 1px solid;display: none;z-index: 5">
+						<h2 class="text-primary p-3 " style="float:left" id="count">ALGERIA</h2>
+						<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
+						<span class="clearfix"></span>
+						<h6 class="text-white " id="desc">lorem ipsum</h6>
+						<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
+						<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
+						<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
+					</div>
+
+			<!--tunisia-->
+					<div class="tunisia" style="position: absolute;bottom:52%;left: 49%">
+						<img src="{% static 'images/Slice/Map/tunisia.png' %}" alt="" style="max-width:68%;height: auto;">
+					</div>
+					<div class="tunisia" id="tunisia" style="position: absolute;bottom:55.3%;left: 47%">
+						<img src="{% static 'images/Slice/Map/flags/tunisia-flag.png' %}" alt="" style="max-width:50%;height: auto;">
+					</div>
+
+					<div class="tu hovdiv" style="position: absolute;width: 300px;height: auto;bottom:55%;left:50%;background: black;padding: 10px;z-index:6;border: #FFF 1px solid;display: none;">
+						<h2 class="text-primary p-3 " style="float:left" id="count">TUNISIA</h2>
+						<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
+						<span class="clearfix"></span>
+						<h6 class="text-white " id="desc">lorem ipsum</h6>
+						<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
+						<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
+						<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
+					</div>
+
+			<!--morocco-->
+					<div class="morocco" style="position: absolute;bottom:51.8%;left: 43.8%">
+						<img src="{% static 'images/Slice/Map/morocco.png' %}" alt="" style="max-width:68%;height: auto;">
+					</div>
+					<div class="morocco" id="morocco" style="position: absolute;bottom:38%;left: 42%">
+						<img src="{% static 'images/Slice/Map/flags/morocco-flag.png' %}" alt="" style="max-width:50%;height: auto;">
+					</div>
+
+					<div class="mo hovdiv" style="position: absolute;width: 300px;height: auto;bottom:54%;left:44%;z-index:7;background: black;padding: 10px;/* left: 100px; */border: #FFF 1px solid;display: none;">
+						<h2 class="text-primary p-3 " style="float:left" id="count">MOROCCO</h2>
+						<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
+						<span class="clearfix"></span>
+						<h6 class="text-white " id="desc">lorem ipsum</h6>
+						<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
+						<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
+						<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
+					</div>
+
+			<!--south-africa-->
+
+					<div class="south-africa" style="position: absolute;bottom:22%;left: 51%">
+						<img src="{% static 'images/Slice/Map/south-africa.png' %}" alt="" style="max-width:70%;height: auto;">
+					</div>
+					<div class="south-africa" id="south-africa" style="position: absolute;bottom:24%;left: 51%">
+						<img src="{% static 'images/Slice/Map/flags/south-africa-flag.png' %}" alt="" style="max-width:60%;height: auto;">
+					</div>
+
+					<div class="sou hovdiv" style="position: absolute;width: 300px;height: auto;bottom:2%;left:55%;background: black;padding: 10px;z-index: 8;border: #FFF 1px solid;display: none;">
+						<h2 class="text-primary p-3 " style="float:left" id="count">SOUTH-AFRICA</h2>
+						<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
+						<span class="clearfix"></span>
+						<h6 class="text-white " id="desc">lorem ipsum</h6>
+						<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
+						<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
+						<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
+					</div>
+
+			<!--uae-->
+					<div class="uae" style="position: absolute;bottom:47%;left: 60.2%">
+						<img src="{% static 'images/Slice/Map/uae.png' %}" alt="" style="max-width:100%;height: auto;">
+					</div>
+					<div class="uae" id="uae" style="position: absolute;bottom:36%;left: 58.5%">
+						<img src="{% static 'images/Slice/Map/flags/uae-flag.png' %}" alt="" style="max-width:60%;height: auto;">
+					</div>
+
+					<div class="ua hovdiv" style="position: absolute;width: 300px;height: auto;bottom: 52%;background: black;padding: 10px;left:61%;border: #FFF 1px solid;display: none;z-index: 9">
+						<h2 class="text-primary p-3 " style="float:left" id="count">UAE</h2>
+						<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
+						<span class="clearfix"></span>
+						<h6 class="text-white " id="desc">lorem ipsum</h6>
+						<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
+						<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
+						<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
+					</div>
+
+			<!--brazil-->
+
+					<div class="brazil" style="position: absolute;bottom:23%;left: 28.5%">
+						<img src="{% static 'images/Slice/Map/brazil.png' %}" alt="" style="max-width:70%;height: auto;">
+					</div>
+					<div class="brazil" id="brazil" style="position: absolute;bottom:35%;left: 33%">
+						<img src="{% static 'images/Slice/Map/flags/brazil-flag.png' %}" alt="" style="max-width:60%;height: auto;">
+					</div>
+
+					<div class="bra hovdiv" style="position: absolute;width: 300px;height: auto;z-index: 10;bottom:27%;left: 25%;background: black;padding: 10px;border: #FFF 1px solid;display: none;">
+						<h2 class="text-primary p-3 " style="float:left" id="count">BRAZIL</h2>
+						<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
+						<span class="clearfix"></span>
+						<h6 class="text-white " id="desc">lorem ipsum</h6>
+						<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
+						<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
+						<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
+					</div>
+
+			<!--argentina-->
+
+					<div class="argentina" style="position: absolute;bottom:11%;left: 28.5%">
+						<img src="{% static 'images/Slice/Map/argentina.png' %}" alt="" style="max-width:70%;height: auto;">
+					</div>
+					<div class="argentina" id="argentina" style="position: absolute;bottom:22%;left: 28%">
+						<img src="{% static 'images/Slice/Map/flags/argentina-flag.png' %}" alt="" style="max-width:60%;height: auto;">
+					</div>
+
+					<div class="arg hovdiv" style="position: absolute;width: 300px;height: auto;z-index: 11;background: black;padding: 10px;bottom: 15%;left:2% ;border: #FFF 1px solid;display: none;">
+						<h2 class="text-primary p-3 " style="float:left" id="count">ARGENTINA</h2>
+						<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
+						<span class="clearfix"></span>
+						<h6 class="text-white " id="desc">lorem ipsum</h6>
+						<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
+						<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
+						<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
+					</div>
+
+			<!--canada-->
+					<div class="canada" style="position: absolute;bottom:57%;left: 12%">
+						<img src="{% static 'images/Slice/Map/canada.png' %}" alt="" style="max-width:68%;height: auto;">
+					</div>
+					<div class="canada" id="canada" style="position: absolute;bottom:70%;left: 15%">
+						<img src="{% static 'images/Slice/Map/flags/canada-flag.png' %}" alt="" style="max-width:60%;height: auto;">
+					</div>
+
+					<div class="can hovdiv" style="position: absolute;width: 300px;height: auto;bottom: 62%;left: 2;background: black;padding: 10px;z-index: 12;border: #FFF 1px solid;display: none;">
+						<h2 class="text-primary p-3 " style="float:left" id="count">CANADA</h2>
+						<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
+						<span class="clearfix"></span>
+						<h6 class="text-white " id="desc">lorem ipsum</h6>
+						<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
+						<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
+						<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
+					</div>
+
+			<!--usa-->
+					<div class="usa" style="position: absolute;bottom:45%;left: 5%">
+						<img src="{% static 'images/Slice/Map/usa.png' %}" alt="" style="max-width:68%;height: auto;">
+					</div>
+					<div class="usa" id="usa" style="position: absolute;bottom:55%;left: 20%">
+						<img src="{% static 'images/Slice/Map/flags/usa-flag.png' %}" alt="" style="max-width:60%;height: auto;">
+					</div>
+
+					<div class="us hovdiv" style="position: absolute;width: 300px;height: auto;bottom: 35%;left: 1%;z-index: 13;background: black;padding: 10px;border: #FFF 1px solid;display: none;">
+						<h2 class="text-primary p-3 " style="float:left" id="count">USA</h2>
+						<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
+						<span class="clearfix"></span>
+						<h6 class="text-white " id="desc">lorem ipsum</h6>
+						<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
+						<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
+						<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
+					</div>
+
+			<!--australia-->
+
+					<div class="australia" style="position: absolute;bottom:17.5%;left: 75%">
+						<img src="{% static 'images/Slice/Map/australia.png' %}" alt="" style="max-width:70%;height: auto;">
+					</div>
+					<div class="australia" id="australia" style="position: absolute;bottom:23%;left: 80%">
+						<img src="{% static 'images/Slice/Map/flags/australia-flag.png' %}" alt="" style="max-width:60%;height: auto;">
+					</div>
+
+					<div class="au hovdiv" style="position: absolute;width: 300px;height: auto;bottom: 15%;left: 70%;z-index: 14;background: black;padding: 10px;border: #FFF 1px solid;display: none;">
+						<h2 class="text-primary p-3 " style="float:left" id="count">AUSTRALIA</h2>
+						<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
+						<span class="clearfix"></span>
+						<h6 class="text-white " id="desc">lorem ipsum</h6>
+						<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
+						<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
+						<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
+					</div>
+
+			<!--singapore-->
+
+					<div class="singapore" style="position: absolute;bottom:36%;left: 72%">
+						<img src="{% static 'images/Slice/Map/singapore.png' %}" alt="" style="max-width:100%;height: auto;">
+					</div>
+					<div class="singapore" id="singapore" style="position: absolute;bottom:23%;left: 71%">
+						<img src="{% static 'images/Slice/Map/flags/singapore=flag.png' %}" alt="" style="max-width:60%;height: auto;">
+					</div>
+
+					<div class="sin hovdiv" style="position: absolute;width: 300px;height: auto;bottom: 0%;left:70%;z-index: 14;background: black;padding: 10px;border: #FFF 1px solid;display: none;">
+						<h2 class="text-primary p-3 " style="float:left" id="count">SINGAPORE</h2>
+						<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
+						<span class="clearfix"></span>
+						<h6 class="text-white " id="desc">lorem ipsum</h6>
+						<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
+						<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
+						<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
+					</div>
+
+			<!--india-->
+
+					<div class="india" style="position: absolute;bottom:40%;left: 64%">
+						<img src="{% static 'images/Slice/Map/india.png' %}" alt="" style="max-width:80%;height: auto;">
+					</div>
+					<div class="india" id="india" style="position: absolute;bottom:48%;left: 63%">
+						<img src="{% static 'images/Slice/Map/flags/india-flag.png' %}" alt="" style="max-width:60%;height: auto;">
+					</div>
+
+					<div class="in hovdiv" style="position: absolute;width: 300px;height: auto;z-index: 15;bottom: 30%;left: 64%;background: black;padding: 10px;border: #FFF 1px solid;display: none;">
+						<h2 class="text-primary p-3 " style="float:left" id="count">INDIA</h2>
+						<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
+						<span class="clearfix"></span>
+						<h6 class="text-white " id="desc">lorem ipsum</h6>
+						<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
+						<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
+						<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
+					</div>
+
+			<!--malaysia-->
+
+					<div class="malaysia" style="position: absolute;bottom:38%;left: 70.5%">
+						<img src="{% static 'images/Slice/Map/malaysia.png' %}" alt="" style="max-width:100%;height: auto;">
+					</div>
+					<div class="malaysia" id="malaysia" style="position: absolute;bottom:34%;left: 64%">
+						<img src="{% static 'images/Slice/Map/flags/malaysia-flag.png' %}" alt="" style="max-width:60%;height: auto;">
+					</div>
+
+					<div class="mal hovdiv" style="position: absolute;width: 300px;height: auto;background: black;padding: 10px;z-index: 16;bottom: 30%;left: 70%;border: #FFF 1px solid;display: none;">
+						<h2 class="text-primary p-3 " style="float:left" id="count">MALAYSIA</h2>
+						<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
+						<span class="clearfix"></span>
+						<h6 class="text-white " id="desc">lorem ipsum</h6>
+						<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
+						<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
+						<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
+					</div>
+
+			<!--indonesia-->
+
+					<div class="indonesia" style="position: absolute;bottom:33%;left: 70%">
+						<img src="{% static 'images/Slice/Map/indonesia.png' %}" alt="" style="max-width:80%;height: auto;">
+					</div>
+					<div class="indonesia" id="indonesia" style="position: absolute;bottom:35%;left: 77%">
+						<img src="{% static 'images/Slice/Map/flags/indonesia-flag.png' %}" alt="" style="max-width:60%;height: auto;">
+					</div>
+					<div class="indo hovdiv" style="position: absolute;width: 300px;height: auto;bottom: 20%;left:70%;background: black;padding: 10px;z-index: 16;border: #FFF 1px solid;display: none;">
+						<h2 class="text-primary p-3 " style="float:left" id="count">INDONESIA</h2>
+						<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
+						<span class="clearfix"></span>
+						<h6 class="text-white " id="desc">lorem ipsum</h6>
+						<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
+						<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
+						<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
+					</div>
+
+
+			<!--japan-->
+
+					<div class="japan" style="position: absolute;bottom:48%;left: 82%">
+						<img src="{% static 'images/Slice/Map/japan.png' %}" alt="" style="max-width:80%;height: auto;">
+					</div>
+					<div class="japan" id="japan" style="position: absolute;bottom:55%;left: 83%">
+						<img src="{% static 'images/Slice/Map/flags/japan-flag.png' %}" alt="" style="max-width:60%;height: auto;">
+					</div>
+
+					<div class="jap hovdiv" style="position: absolute;width: 300px;height: auto;bottom:56%;left: 70%;background: black;padding: 10px;z-index: 18;border: #FFF 1px solid;display: none;">
+						<h2 class="text-primary p-3 " style="float:left" id="count">JAPAN</h2>
+						<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
+						<span class="clearfix"></span>
+						<h6 class="text-white " id="desc">lorem ipsum</h6>
+						<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
+						<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
+						<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
+					</div>
+
+
+			<!--china-->
+
+					<div class="china" style="position: absolute;bottom:41%;left: 66%">
+						<img src="{% static 'images/Slice/Map/china.png' %}" alt="" style="max-width:72%;height: auto;">
+					</div>
+					<div class="china" id="china" style="position: absolute;bottom:50%;left: 72%">
+						<img src="{% static 'images/Slice/Map/flags/china-flag.png' %}" alt="" style="max-width:60%;height: auto;">
+					</div>
+					<div class="chi hovdiv" style="position: absolute;width: 300px;height: auto;z-index: 20;background: black;padding: 10px;bottom: 70%;left: 66%;border: #FFF 1px solid;display: none;">
+						<h2 class="text-primary p-3 " style="float:left" id="count">CHINA</h2>
+						<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
+						<span class="clearfix"></span>
+						<h6 class="text-white " id="desc">lorem ipsum</h6>
+						<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
+						<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
+						<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
+					</div>
+				</div>
 			</div>
-				<map name="image-map" id="mp">
-					<area target="" onclick="showme('Canada','LOREM IPSUM','1.5 MILLION','2','club2,club3')"  id="Canada" alt="canada" title="canada"  coords="286,222,27" shape="circle">
-					<area target="" onclick="showme('USA','LOREM IPSUM','1.5 MILLION','2','club2,club3')" id="USA"  alt="usa" title="usa"  coords="307,335,25" shape="circle">
-					<area target=""  onclick="showme('Argentina','LOREM IPSUM','1.5 MILLION','2','club2,club3')" id="Argentina" alt="Argentina" title="argentina"  coords="439,643,28" shape="circle">
-					<area target=""  onclick="showme('Brazil','LOREM IPSUM','1.5 MILLION','2','club2,club3')" id="Brazil"  alt="brazil" title="brazil"  coords="496,549,27" shape="circle">
-					<area target="" onclick="showme('Morocco','LOREM IPSUM','1.5 MILLION','2','club2,club3')" id="Morocco"  alt="moroco" title="moroco"  coords="656,359,27" shape="circle">
-					<area target="" onclick="showme('Algeria','LOREM IPSUM','1.5 MILLION','2','club2,club3')" id="Algeria"  alt="algeria" title="algeria"  coords="696,413,22" shape="circle">
-					<area target="" onclick="showme('Tunisia','LOREM IPSUM','1.5 MILLION','2','club2,club3')" id="Tunisia"  alt="tunisia" title="tunisia"  coords="713,330,29" shape="circle">
-					<area target="" onclick="showme('Egypt','LOREM IPSUM','1.5 MILLION','2','club2,club3')" id="Egypt"  alt="egypt" title="egypt"  coords="781,415,27" shape="circle">
-					<area target="" onclick="showme('Saudia-Arabia','LOREM IPSUM','1.5 MILLION','2','club2,club3')"  id="Saudia-Arabia" alt="saudia" title="saudia"  coords="841,359,23" shape="circle">
-					<area target="" onclick="showme('Qatar','LOREM IPSUM','1.5 MILLION','2','club2,club3')" id="Qatar"  alt="qatar" title="qatar"  coords="862,416,25" shape="circle">
-					<area target="" onclick="showme('UAE','LOREM IPSUM','1.5 MILLION','2','club2,club3')" id="UAE"  alt="uae" title="uae"  coords="878,552,29" shape="circle">
-					<area target="" onclick="showme('SouthAfrica','LOREM IPSUM','1.5 MILLION','2','club2,club3')"  id="SouthAfrica" alt="saf" title="saf"  coords="770,629,25" shape="circle">
-					<area target="" onclick="showme('Malaysia','LOREM IPSUM','1.5 MILLION','2','club2,club3')"  id="Malaysia" alt="malaysia" title="malaysia"  coords="975,560,26" shape="circle">
-					<area target="" onclick="showme('India','LOREM IPSUM','1.5 MILLION','2','club2,club3')"  id="India" alt="india" title="india"  coords="961,431,28" shape="circle">
-					<area target="" onclick="showme('Thailand','LOREM IPSUM','1.5 MILLION','2','club2,club3')"  id="Thailand" alt="thailand" title="thailand"  coords="1038,462,26" shape="circle">
-					<area target="" onclick="showme('Singapore','LOREM IPSUM','1.5 MILLION','2','club2,club3')"  id="Singapore" alt="singapore" title="singapore"  coords="1055,637,27" shape="circle">
-					<area target="" onclick="showme('China','LOREM IPSUM','1.5 MILLION','2','club2,club3')"  id="China" alt="china" title="china"  coords="1051,369,29" shape="circle">
-					<area target=""  onclick="showme('Indonesia','LOREM IPSUM','1.5 MILLION','2','club2,club3')"  id="Indonesia" alt="indonesia" title="indonesia"  coords="1086,521,27" shape="circle">
-					<area target="" onclick="showme('Japan','LOREM IPSUM','1.5 MILLION','2','club2,club3')"  id="Japan" alt="japan" title="japan"  coords="1179,378,31" shape="circle">
-					<area target="" onclick="showme('Australia','LOREM IPSUM','1.5 MILLION','2','club2,club3')"  id="Australia" alt="australia" title="austrailia"  coords="1167,595,31" shape="circle">
-				</map>
-			</section>
-			<!-- End contact-form section -->
-
 		</div>
 		<!-- End content -->
 
@@ -155,9 +419,7 @@ $('#clubs').text(clubs);					}
 
 	<script src="{% static 'js/genix-plugins.min.js' %}"></script>
 	<script type="text/javascript" src="{% static 'js/jquery.countTo.js' %}"></script>
-    <script src="http://maps.google.com/maps/api/js?key=AIzaSyCiqrIen8rWQrvJsu-7f4rOta0fmI5r2SI&amp;sensor=false&amp;language=en" type="text/javascript"></script>
 	<script type="text/javascript" src="{% static 'js/gmap3.min.js' %}"></script>
 	<script type="text/javascript" src="{% static 'js/script.js' %}"></script>
-
 </body>
 </html>

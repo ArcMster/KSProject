@@ -1,56 +1,43 @@
 <!doctype html>
-
-{% load static %}
 <html lang="en" class="no-js">
 <head>
-	<title>Genix</title>
-
+	{% load static %}
+	<title>About Us</title>
 	<meta charset="utf-8">
-
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	
 	<link rel="stylesheet" href="{% static 'css/genix-assets.min.css' %}">
 	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
-
 </head>
 <body>
-
 	<!-- Container -->
 	<div id="container">
 		<!-- Header
 		    ================================================== -->
-			<header class="clearfix">
+		<header class="clearfix">
+			<div class="logo">
+				<a href="index.html"><img class="img-responsive" src="{% static 'images/Slice/Side-Menu/logo.png' %}" alt=""></a>
+			</div>
+			<a class="elemadded responsive-link" href="#">Menu</a>
+			<nav class="nav-menu">
+				<ul class="menu-list">
+					<li><a  href="index.html">Home</a></li>
+					<li><a class="active" href="about.html">About Us</a></li>
+					<li><a href="map.html">Map</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+			<div class="social-box">
+				<ul class="social-icons text-center">
+					<li><a class="instagram" href="#"><img class="img-responsive" src="{% static 'images/Slice/Side-Menu/instagram.png' %}" alt="instagram image"></a></li>
+					<li><a class="facebook" href="#"><img class="img-responsive" src="{% static 'images/Slice/Side-Menu/facebook.png' %}" alt="facebook image"></a></li>
+					<li><a class="twitter" href="#"><img class="img-responsive" src="{% static 'images/Slice/Side-Menu/twitter.png' %}" alt="twitter image" style="margin-top: 7px"></a></li>
+					<li><a class="linkedin" href="#"><img class="img-responsive" src="{% static 'images/Slice/Side-Menu/linkedin.png' %}" alt="linkedin image"></a></li>
+				</ul>
+				<p>© 2018 KHASquad. All rights reserved.</p>
+			</div>
 
-				<div class="logo">
-					<a href="index.html"><img src="{% static 'images/logo.png' %}" alt=""></a>
-				</div>
-	
-				<a class="elemadded responsive-link" href="#">Menu</a>
-	
-				<nav class="nav-menu">
-					<ul class="menu-list">
-						<li><a href="index.html">Home</a></li>
-						<li><a class="active" href="about.html">About</a></li>
-						<li><a   href="map.html">Map</a></li>
-						<!-- <li><a href="blog.html">Media</a></li> -->
-						<li><a href="contact.html">Contact</a></li>
-					</ul>
-				</nav>
-	
-				<div class="social-box">
-					<ul class="social-icons">
-						<li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-						<li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-						<li><a class="rss" href="#"><i class="fa fa-rss"></i></a></li>
-						<li><a class="google" href="#"><i class="fa fa-google-plus"></i></a></li>
-						<li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-					</ul>
-				
-					<p>© 2020 KHASquared. All rights reserved.</p>
-				</div>
-	
-			</header>
+		</header>
 		<!-- End Header -->
 
 		<!-- content 
@@ -59,12 +46,12 @@
 
 			<!-- page-banner-section 
 				================================================== -->
-			<section class="page-banner-section-about">
+			<section class="page-banner-section">
 				<div class="border-line-box"></div>
 				<div class="page-box-title">
 					<div class="container">
 						<h1>About Us</h1>
-						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
+						<p>Lorem ipsum dolor sit amet ,sed diam nonummy nibh euismod. </p>
 					</div>
 				</div>
 			</section>
@@ -74,45 +61,38 @@
 				================================================== -->
 			<section class="about-section">
 				<div class="container">
-
 					<div class="about-box">
 						<div class="row">
-
 							<div class="col-sm-6">
 								<div class="about-post">
-									<h2 class="text-primary">Our Mission</h2>
+									<h2>Our Mission</h2>
 									<p>Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</p>
 									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. </p>
 								</div>
 							</div>
-
 							<div class="col-sm-6">
 								<div class="about-post">
-									<h2  class="text-primary">Our Philosophy</h2>
+									<h2>Brand Ethos</h2>
 									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. <br>
 									Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti. </p>
 								</div>
 							</div>
-
 						</div>
 					</div>
-
 				</div>
 			</section>
 			<!-- End about section -->
-
 			<!-- team section -->
 			<section class="team-section">
 				<div class="container-fluid">
 					<div class="title-section">
-						<h1>Our people</h1>
-						<!-- <p>Variations of passages of Lorem Ipsum available</p> -->
+						<h1>Our People</h1>
 					</div>
 				</div>
 				<div class="team-box">
 					<div class="team-box-side">
 						<div class="team-post">
-							<img src="{% static 'upload/others/mem1.jpg' %}" alt="">
+							<img src="{% static 'images/Slice/About-Us/our-people-inactive.png' %}" alt="">
 							<div class="hover-team">
 								<div class="inner-team">
 									<h3>John Rawley</h3>
@@ -127,7 +107,7 @@
 							</div>
 						</div>
 						<div class="team-post">
-							<img src="{% static 'upload/others/mem2.jpg' %}" alt="">
+							<img src="{% static 'images/Slice/About-Us/our-people-hovered.png' %}" alt="">
 							<div class="hover-team">
 								<div class="inner-team">
 									<h3>John Doe</h3>
@@ -142,7 +122,22 @@
 							</div>
 						</div>
 						<div class="team-post">
-							<img src="{% static 'upload/others/mem3.jpg' %}" alt="">
+							<img src="{% static 'images/Slice/About-Us/our-people-inactive.png' %}" alt="">
+							<div class="hover-team">
+								<div class="inner-team">
+									<h3>Jessica Doe</h3>
+									<span>Marketing</span>
+									<ul class="social-team">
+										<li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+										<li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+										<li><a class="google" href="#"><i class="fa fa-google-plus"></i></a></li>
+										<li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="team-post">
+							<img src="{% static 'images/Slice/About-Us/our-people-inactive.png' %}" alt="">
 							<div class="hover-team">
 								<div class="inner-team">
 									<h3>Jessica Doe</h3>
@@ -160,48 +155,41 @@
 				</div>
 			</section>
 			<!-- End team section -->
-
 			<!-- statistic-section 
 				================================================== -->
 			<section class="statistic-section">
 				<div class="container-fluid">
 					<div class="statistic-box">
-
 						<div class="statistic-post">
-							<img src="{% static 'images/continents-icon.png' %}" >
-							<h2><span class="timer text-primary" data-from="0" data-to="05"></span></h2>
-							<p>Continents</p>
+							<img src="{% static 'images/Slice/About-Us/continents-icon.png' %}" alt="continents-icon">
+							<h2><span class="timer" data-from="0" data-to="453"></span></h2>
+							<p>Completed Projects</p>
+						</div>
+						<div class="statistic-post">
+							<img src="{% static 'images/Slice/About-Us/offices-icon.png' %}" alt="offices-icon"> 
+							<h2><span class="timer" data-from="0" data-to="856"></span></h2>
+							<p>Hours of Work</p>
+						</div>
+						<div class="statistic-post">
+							<img src="{% static 'images/Slice/About-Us/nationalities-represented-icon.png' %}" alt="nationalities-represented-icon">
+							<h2><span class="timer" data-from="0" data-to="325"></span></h2>
+							<p>Happy Clients</p>
 						</div>
 
 						<div class="statistic-post">
-							<img src="{% static 'images/offices-icon.png' %}" >
-							<h2><span class="timer text-primary" data-from="0" data-to="06"></span></h2>
-							<p>Offices</p>
+							<img src="{% static 'images/Slice/About-Us/countries-icon.png' %}" alt="countries-icon">
+							<h2><span class="timer" data-from="0" data-to="550"></span></h2>
+							<p>Cups of Coffee</p>
 						</div>
-
 						<div class="statistic-post">
-							<img src="{% static 'images/nationalities-represented-icon.png' %}" >
-							<h2><span class="timer text-primary" data-from="0" data-to="18"></span></h2>
-							<p>Nationalities<br>Respresented</p>
+							<img src="{% static 'images/Slice/About-Us/clubs-icon.png' %}" alt="clubs-icon">
+							<h2><span class="timer" data-from="0" data-to="32"></span></h2>
+							<p>Awards Won</p>
 						</div>
-
-						<div class="statistic-post">
-							<img src="{% static 'images/countries-icon.png' %}" >
-							<h2><span class="timer text-primary" data-from="0" data-to="64"></span></h2>
-							<p>Countries</p>
-						</div>
-
-						<div class="statistic-post">
-							<img src="{% static 'images/clubs-icon.png' %}" >
-							<h2><span class="timer text-primary" data-from="0" data-to="700"></span></h2>
-							<p>Clubs</p>
-						</div>
-
 					</div>
 				</div>
 			</section>
 			<!-- End statistic section -->
-
 			<!-- Testimonial-section 
 				================================================== -->
 			<section class="testimonial-section">
@@ -210,7 +198,7 @@
 					<h1>What our clients say</h1>
 				</div>
 			<div class="container" style="
-			background: url(images/testimonial-box.png) no-repeat 100% 100%;
+			background: url(images/Slice/About-Us/testimonial-box.png) no-repeat 100% 100%;
     padding: 76px 0;
     background-size: 80% 100%;
     background-position: center;">
@@ -218,45 +206,26 @@
 
 					<div class="testimonial-box" >
 						<ul class="bxslider">
-							<li>		<img src="{% static 'upload/others/test1.jpg' %}" alt="">
+							<li>		
+								<img src="{% static 'upload/others/test1.jpg' %}" alt="">
 								<p>" Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu pulvinar risus, vitae facilisis libero dolor a purus. Sed vel lacus. Mauris nibh felis, adipiscing varius, adipiscing in, lacinia vel, tellus. Suspendisse ac urna. " </p>
-						
 								<h3>Andreas Joy, Web Designer</h3>
 							</li>
-							<li>		<img src="{% static 'upload/others/test2.jpg' %}" alt="">
+							<li>
+								<img src="{% static 'upload/others/test2.jpg' %}" alt="">
 								<p>" Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu pulvinar risus, vitae facilisis libero dolor a purus. Sed vel lacus. Mauris nibh felis, adipiscing varius, adipiscing in, lacinia vel, tellus. Suspendisse ac urna. " </p>
-						
 								<h3>John Doe, Web Developer</h3>
 							</li>
 							<li>
 								<img src="{% static 'upload/others/test3.jpg' %}" alt="">
 								<p> Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu pulvinar risus, vitae facilisis libero dolor a purus. Sed vel lacus. Mauris nibh felis, adipiscing varius, adipiscing in, lacinia vel, tellus. Suspendisse ac urna. " </p>
-							
 								<h3>Michael Smith, Ui Designer</h3>
 							</li>
 						</ul>
 					</div>
-
 				</div>
 			</section>
 			<!-- End Testimonial section -->
-
-			<!-- clients-section 
-				================================================== -->
-			<!-- <section class="clients-section">
-				<div class="clients-box">
-					<ul class="client-list">
-						<li><a href="#"><img src="images/clients/1.png" alt=""></a></li>
-						<li><a href="#"><img src="images/clients/2.png" alt=""></a></li>
-						<li><a href="#"><img src="images/clients/3.png" alt=""></a></li>
-						<li><a href="#"><img src="images/clients/4.png" alt=""></a></li>
-						<li><a href="#"><img src="images/clients/5.png" alt=""></a></li>
-						<li><a href="#"><img src="images/clients/6.png" alt=""></a></li>
-					</ul>
-				</div>
-			</section> -->
-			<!-- End clients section -->
-
 		</div>
 		<!-- End content -->
 
@@ -265,8 +234,6 @@
 
 	<script src="{% static 'js/genix-plugins.min.js' %}"></script>
 	<script type="text/javascript" src="{% static 'js/jquery.countTo.js' %}"></script>
-    <script src="http://maps.google.com/maps/api/js?key=AIzaSyCiqrIen8rWQrvJsu-7f4rOta0fmI5r2SI&amp;sensor=false&amp;language=en" type="text/javascript"></script>
-	<script type="text/javascript" src="{% static 'js/gmap3.min.js' %}"></script>
 	<script type="text/javascript" src="{% static 'js/script.js' %}"></script>
 
 </body>

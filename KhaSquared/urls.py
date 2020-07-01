@@ -10,5 +10,6 @@ urlpatterns = [
     path('about.html', views.about,name='about'),
     path('portfolio.html', views.portfolio, name='portfolio'),
     path('blog.html', views.blog, name='blog'),
-    path('map.html', views.map, name='map')
+    path('map.html', views.map, name='map'),
+    path('index1.html', views.index1, name = 'index1')
 ]

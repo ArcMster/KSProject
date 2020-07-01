@@ -212,7 +212,7 @@ $(document).ready(function($) {
 	
 	try{		
 		slidertestimonial.bxSlider({
-			mode: 'vertical'
+			mode: 'horizontal'
 		});
 	} catch(err) {
 	}
@@ -344,4 +344,69 @@ $(window).on('load', function() {
 $(window).on('resize', function() {
 	var winDowHeight = $(window).outerHeight();
 	$('header').css('height', winDowHeight);
+});
+
+/* ---------------------------------------------------------------------- */
+/*	map 
+/* ---------------------------------------------------------------------- */
+function notshowme(){
+	$('.hovdiv').css("display","none");
+}
+
+$("#egypt").on("click",function(){
+	$(".eg").toggle()
+});
+$("#saudi").on("click",function(){
+	$(".sa").toggle()
+});
+$("#qatar").on("click",function(){
+	$(".qa").toggle()
+});
+$("#algeria").on("click",function(){
+	$(".al").toggle()
+});
+$("#tunisia").on("click",function(){
+	$(".tu").toggle()
+});
+$("#morocco").on("click",function(){
+	$(".mo").toggle()
+});
+$("#south-africa").on("click",function(){
+	$(".sou").toggle()
+});
+$("#uae").on("click",function(){
+	$(".ua").toggle()
+});
+$("#brazil").on("click",function(){
+	$(".bra").toggle()
+});
+$("#argentina").on("click",function(){
+	$(".arg").toggle()
+});
+$("#canada").on("click",function(){
+	$(".can").toggle()
+});
+$("#usa").on("click",function(){
+	$(".us").toggle()
+});
+$("#australia").on("click",function(){
+	$(".au").toggle()
+});
+$("#singapore").on("click",function(){
+	$(".sin").toggle()
+});
+$("#india").on("click",function(){
+	$(".in").toggle()
+});
+$("#malaysia").on("click",function(){
+	$(".mal").toggle()
+});
+$("#indonesia").on("click",function(){
+	$(".indo").toggle()
+});
+$("#japan").on("click",function(){
+	$(".jap").toggle()
+});
+$("#china").on("click",function(){
+	$(".chi").toggle()
 });
