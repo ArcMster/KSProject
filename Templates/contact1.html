@@ -31,8 +31,8 @@
 				<ul class="social-icons text-center">
 					<li><a class="instagram" href="#"><img src="{% static 'images/Slice/Side-Menu/instagram.png' %}" alt="instagram image"></a></li>
 					<li><a class="facebook" href="#"><img src="{% static 'images/Slice/Side-Menu/facebook.png' %}" alt="facebook image"></a></li>
-					<li><a class="twitter" href="#"><img src="{% static 'images/Slice/Side-Menu/twitter.png' %}" alt="twitter image" style="margin-top: 7px"></a></li>
-					<li><a class="linkedin" href="#"><img src="{% static 'images/Slice/Side-Menu/linkedin.png' %}" alt="linkedin image"></a></li>
+					<li><a class="twitter" href="#"><img src="{% static 'images/Slice/Side-Menu/twitter.png' %}" alt="twitter image" style="margin-top: 7px;margin-left: -9px"></a></li>
+					<li><a class="linkedin" href="#"><img src="{% static 'images/Slice/Side-Menu/linkedin.png' %}" alt="linkedin image" style="margin-left: -6px"></a></li>
 				</ul>
 				<p>© 2018 KHASquad. All rights reserved.</p>
 			</div>
@@ -54,7 +54,7 @@
 					<div class="contact-form-box">
 						<div class="row">
 							<div class="col-sm-7">
-								<h2>Your message has been recorded</h2>
+								<h2>Your input has been recorded</h2>
 
 								<form id="contact-form" action="userinput" method="POST">
 									{% csrf_token %}
@@ -72,10 +72,7 @@
 											<textarea name="comment" id="comment" placeholder="Message*"></textarea>
 										</div>
 										<div class="col-sm-12">
-											<!--<input type="submit" id="submit_contact" value="Submit Comment">-->
-											<input type="submit" value="Submit Comment">
-										</div>
-											<!--<input type="submit" value="Submit Comment">-->
+											<input type="submit" value="Submit Comment"></div>
 										</div>
 									<div id="msg" class="message alert">
 									

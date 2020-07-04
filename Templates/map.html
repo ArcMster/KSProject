@@ -5,7 +5,7 @@
 	<title>Map</title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=4">
 	<link rel="stylesheet" href="{% static 'css/genix-assets.min.css' %}">
 	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
 </head>
@@ -31,8 +31,8 @@
 				<ul class="social-icons text-center">
 					<li><a class="instagram" href="#"><img class="img-responsive" src="{% static 'images/Slice/Side-Menu/instagram.png' %}" alt="instagram image"></a></li>
 					<li><a class="facebook" href="#"><img class="img-responsive" src="{% static 'images/Slice/Side-Menu/facebook.png' %}" alt="facebook image"></a></li>
-					<li><a class="twitter" href="#"><img class="img-responsive" src="{% static 'images/Slice/Side-Menu/twitter.png' %}" alt="twitter image" style="margin-top: 7px"></a></li>
-					<li><a class="linkedin" href="#"><img class="img-responsive" src="{% static 'images/Slice/Side-Menu/linkedin.png' %}" alt="linkedin image"></a></li>
+					<li><a class="twitter" href="#"><img class="img-responsive" src="{% static 'images/Slice/Side-Menu/twitter.png' %}" alt="twitter image" style="margin-top: 7px;margin-left: -9px"></a></li>
+					<li><a class="linkedin" href="#"><img class="img-responsive" src="{% static 'images/Slice/Side-Menu/linkedin.png' %}" alt="linkedin image" style="margin-left: -6px"></a></li>
 				</ul>
 				<p>© 2018 KHASquad. All rights reserved.</p>
 			</div>
@@ -52,20 +52,16 @@
  -->					</div>
 				</div>
 			</section>			
-			<div style="position: relative;" class="cover">
-				<img src="{% static 'images/Slice/Map/map.png' %}" class="bg" style="width: auto;max-width: 100%;height: auto;" alt="" >
+			<div  class=" countries-bg">
 				<div class="countries">
 			
 			<!--Egypt-->
 
-					<div class="egypt" style="position: absolute;bottom:48.5%;left: 53%">
-						<img src="{% static 'images/Slice/Map/egypt.png' %}" alt="" style="max-width:70%;height: auto;">
-					</div>
-					<div class="egypt" id="egypt" style="position: absolute;bottom:37%;left: 52%">
-						<img src="{% static 'images/Slice/Map/flags/egypt-flag.png' %}" alt="" style="max-width:60%;height: auto;">
+					<div class="egypt flag" id="egypt">
+						<img src="{% static 'images/Slice/Map/flags/egypt-flag1.png' %}" alt="egypt flag" class="egypt-flag-img">
 					</div>
 
-					<div class="eg hovdiv" style="position: absolute;width: 300px;height: auto;left: 53%;bottom:55%; background: black;padding: 10px;/* left: 100px; */border: #FFF 1px solid;display: none;z-index: 2">
+					<div class="eg hovdiv">
 						<h2 class="text-primary p-3 " style="float:left" id="count">EGYPT</h2>
 						<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
 						<span class="clearfix"></span>
@@ -77,14 +73,11 @@
 
 			<!--Saudi-->
 
-					<div class="saudi"  style="position: absolute;bottom:45.6%;left: 56%">
-						<img src="{% static 'images/Slice/Map/saudi.png' %}" alt="saudi arabia" style="max-width:70%;height: auto;">
-					</div>
-					<div class="saudi" id="saudi" style="position: absolute;bottom:52%;left: 55%">
-						<img src="{% static 'images/Slice/Map/flags/saudi-flag.png' %}" alt="" style="max-width:60%;height: auto;">
+					<div class="saudi flag" id="saudi">
+						<img src="{% static 'images/Slice/Map/flags/saudi-flag1.png' %}" class="saudi-flag-img" alt="saudi flag">
 					</div>
 
-					<div class="sa hovdiv" style="position: absolute;width: 300px;height: auto;bottom:50%;left:56%;background: black;padding: 10px;border: #FFF 1px solid;display: none;z-index: 3">
+					<div class="sa hovdiv">
 						<h2 class="text-primary p-3 " style="float:left" id="count">SAUDI ARABIA</h2>
 						<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
 						<span class="clearfix"></span>
@@ -95,14 +88,11 @@
 					</div>
 
 			<!--qatar-->
-					<div class="qatar"  style="position: absolute;bottom:48%;left: 60.8%">
-						<img src="{% static 'images/Slice/Map/qatar.png' %}" alt="" style="max-width:100%;height: auto;">
-					</div>
-					<div class="qatar" id="qatar" style="position: absolute;bottom:49%;left: 58%">
-						<img src="{% static 'images/Slice/Map/flags/qatar-flag.png' %}" alt="" style="max-width:60%;height: auto;">
+					<div class="qatar flag" id="qatar">
+						<img src="{% static 'images/Slice/Map/flags/qatar-flag1.png' %}" class = "qatar-flag-img" alt="qatar flag">
 					</div>
 
-					<div class="qa hovdiv"  style="position: absolute;width: 300px;height: auto;bottom:52%;left:61%;background: black;padding: 10px;z-index:4;border: #FFF 1px solid;display: none;">
+					<div class="qa hovdiv">
 						<h2 class="text-primary p-3 " style="float:left" id="count">QATAR</h2>
 						<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
 						<span class="clearfix"></span>
@@ -113,14 +103,11 @@
 					</div>
 
 			<!--algeria-->
-					<div class="algeria" style="position: absolute;bottom:47.5%;left: 45%">
-						<img src="{% static 'images/Slice/Map/algeria.png' %}" alt="" style="max-width:68%;height: auto;">
-					</div>
-					<div class="algeria" id="algeria" style="position: absolute;bottom:45%;left: 47%">
-						<img src="{% static 'images/Slice/Map/flags/algeria-flag.png' %}" alt="" style="max-width:60%;height: auto;">
+					<div class="algeria flag" id="algeria">
+						<img src="{% static 'images/Slice/Map/flags/algeria-flag1.png' %}" class="algeria-flag-img"alt="algeria flag">
 					</div>
 
-					<div class="al hovdiv" style="position: absolute;width: 300px;height: auto;bottom:52%;left:45%;background: black;padding: 10px;border: #FFF 1px solid;display: none;z-index: 5">
+					<div class="al hovdiv">
 						<h2 class="text-primary p-3 " style="float:left" id="count">ALGERIA</h2>
 						<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
 						<span class="clearfix"></span>
@@ -131,14 +118,11 @@
 					</div>
 
 			<!--tunisia-->
-					<div class="tunisia" style="position: absolute;bottom:52%;left: 49%">
-						<img src="{% static 'images/Slice/Map/tunisia.png' %}" alt="" style="max-width:68%;height: auto;">
-					</div>
-					<div class="tunisia" id="tunisia" style="position: absolute;bottom:55.3%;left: 47%">
-						<img src="{% static 'images/Slice/Map/flags/tunisia-flag.png' %}" alt="" style="max-width:50%;height: auto;">
+					<div class="tunisia flag" id="tunisia">
+						<img src="{% static 'images/Slice/Map/flags/tunisia-flag1.png' %}" class="tunisia-flag-img" alt="tunisia flag">
 					</div>
 
-					<div class="tu hovdiv" style="position: absolute;width: 300px;height: auto;bottom:55%;left:50%;background: black;padding: 10px;z-index:6;border: #FFF 1px solid;display: none;">
+					<div class="tu hovdiv">
 						<h2 class="text-primary p-3 " style="float:left" id="count">TUNISIA</h2>
 						<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
 						<span class="clearfix"></span>
@@ -149,14 +133,11 @@
 					</div>
 
 			<!--morocco-->
-					<div class="morocco" style="position: absolute;bottom:51.8%;left: 43.8%">
-						<img src="{% static 'images/Slice/Map/morocco.png' %}" alt="" style="max-width:68%;height: auto;">
-					</div>
-					<div class="morocco" id="morocco" style="position: absolute;bottom:38%;left: 42%">
-						<img src="{% static 'images/Slice/Map/flags/morocco-flag.png' %}" alt="" style="max-width:50%;height: auto;">
+					<div class="morocco flag" id="morocco">
+						<img src="{% static 'images/Slice/Map/flags/morocco-flag1.png' %}" class="morocco-flag-img" alt="morocco flag">
 					</div>
 
-					<div class="mo hovdiv" style="position: absolute;width: 300px;height: auto;bottom:54%;left:44%;z-index:7;background: black;padding: 10px;/* left: 100px; */border: #FFF 1px solid;display: none;">
+					<div class="mo hovdiv">
 						<h2 class="text-primary p-3 " style="float:left" id="count">MOROCCO</h2>
 						<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
 						<span class="clearfix"></span>
@@ -168,14 +149,10 @@
 
 			<!--south-africa-->
 
-					<div class="south-africa" style="position: absolute;bottom:22%;left: 51%">
-						<img src="{% static 'images/Slice/Map/south-africa.png' %}" alt="" style="max-width:70%;height: auto;">
+					<div class="south-africa flag" id="south-africa">
+						<img src="{% static 'images/Slice/Map/flags/south-africa-flag1.png' %}" class="south-africa-flag-img" alt="south-africa flag">
 					</div>
-					<div class="south-africa" id="south-africa" style="position: absolute;bottom:24%;left: 51%">
-						<img src="{% static 'images/Slice/Map/flags/south-africa-flag.png' %}" alt="" style="max-width:60%;height: auto;">
-					</div>
-
-					<div class="sou hovdiv" style="position: absolute;width: 300px;height: auto;bottom:2%;left:55%;background: black;padding: 10px;z-index: 8;border: #FFF 1px solid;display: none;">
+					<div class="sou hovdiv">
 						<h2 class="text-primary p-3 " style="float:left" id="count">SOUTH-AFRICA</h2>
 						<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
 						<span class="clearfix"></span>
@@ -186,14 +163,11 @@
 					</div>
 
 			<!--uae-->
-					<div class="uae" style="position: absolute;bottom:47%;left: 60.2%">
-						<img src="{% static 'images/Slice/Map/uae.png' %}" alt="" style="max-width:100%;height: auto;">
-					</div>
-					<div class="uae" id="uae" style="position: absolute;bottom:36%;left: 58.5%">
-						<img src="{% static 'images/Slice/Map/flags/uae-flag.png' %}" alt="" style="max-width:60%;height: auto;">
+					<div class="uae flag" id="uae">
+						<img src="{% static 'images/Slice/Map/flags/uae-flag1.png' %}" class="uae-flag-img" alt="uae flag">
 					</div>
 
-					<div class="ua hovdiv" style="position: absolute;width: 300px;height: auto;bottom: 52%;background: black;padding: 10px;left:61%;border: #FFF 1px solid;display: none;z-index: 9">
+					<div class="ua hovdiv">
 						<h2 class="text-primary p-3 " style="float:left" id="count">UAE</h2>
 						<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
 						<span class="clearfix"></span>
@@ -205,14 +179,11 @@
 
 			<!--brazil-->
 
-					<div class="brazil" style="position: absolute;bottom:23%;left: 28.5%">
-						<img src="{% static 'images/Slice/Map/brazil.png' %}" alt="" style="max-width:70%;height: auto;">
-					</div>
-					<div class="brazil" id="brazil" style="position: absolute;bottom:35%;left: 33%">
-						<img src="{% static 'images/Slice/Map/flags/brazil-flag.png' %}" alt="" style="max-width:60%;height: auto;">
+					<div class="brazil flag" id="brazil">
+						<img src="{% static 'images/Slice/Map/flags/brazil-flag1.png' %}" class="brazil-flag-img" alt="brazil flag">
 					</div>
 
-					<div class="bra hovdiv" style="position: absolute;width: 300px;height: auto;z-index: 10;bottom:27%;left: 25%;background: black;padding: 10px;border: #FFF 1px solid;display: none;">
+					<div class="bra hovdiv">
 						<h2 class="text-primary p-3 " style="float:left" id="count">BRAZIL</h2>
 						<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
 						<span class="clearfix"></span>
@@ -224,14 +195,11 @@
 
 			<!--argentina-->
 
-					<div class="argentina" style="position: absolute;bottom:11%;left: 28.5%">
-						<img src="{% static 'images/Slice/Map/argentina.png' %}" alt="" style="max-width:70%;height: auto;">
-					</div>
-					<div class="argentina" id="argentina" style="position: absolute;bottom:22%;left: 28%">
-						<img src="{% static 'images/Slice/Map/flags/argentina-flag.png' %}" alt="" style="max-width:60%;height: auto;">
+					<div class="argentina flag" id="argentina">
+						<img src="{% static 'images/Slice/Map/flags/argentina-flag1.png' %}" class="argentina-flag-img" alt="argentina flag">
 					</div>
 
-					<div class="arg hovdiv" style="position: absolute;width: 300px;height: auto;z-index: 11;background: black;padding: 10px;bottom: 15%;left:2% ;border: #FFF 1px solid;display: none;">
+					<div class="arg hovdiv">
 						<h2 class="text-primary p-3 " style="float:left" id="count">ARGENTINA</h2>
 						<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
 						<span class="clearfix"></span>
@@ -242,14 +210,11 @@
 					</div>
 
 			<!--canada-->
-					<div class="canada" style="position: absolute;bottom:57%;left: 12%">
-						<img src="{% static 'images/Slice/Map/canada.png' %}" alt="" style="max-width:68%;height: auto;">
-					</div>
-					<div class="canada" id="canada" style="position: absolute;bottom:70%;left: 15%">
-						<img src="{% static 'images/Slice/Map/flags/canada-flag.png' %}" alt="" style="max-width:60%;height: auto;">
+					<div class="canada flag" id="canada">
+						<img src="{% static 'images/Slice/Map/flags/canada-flag1.png' %}" class="canada-flag-img" alt="canada flag">
 					</div>
 
-					<div class="can hovdiv" style="position: absolute;width: 300px;height: auto;bottom: 62%;left: 2;background: black;padding: 10px;z-index: 12;border: #FFF 1px solid;display: none;">
+					<div class="can hovdiv">
 						<h2 class="text-primary p-3 " style="float:left" id="count">CANADA</h2>
 						<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
 						<span class="clearfix"></span>
@@ -260,14 +225,11 @@
 					</div>
 
 			<!--usa-->
-					<div class="usa" style="position: absolute;bottom:45%;left: 5%">
-						<img src="{% static 'images/Slice/Map/usa.png' %}" alt="" style="max-width:68%;height: auto;">
-					</div>
-					<div class="usa" id="usa" style="position: absolute;bottom:55%;left: 20%">
-						<img src="{% static 'images/Slice/Map/flags/usa-flag.png' %}" alt="" style="max-width:60%;height: auto;">
+					<div class="usa flag" id="usa">
+						<img src="{% static 'images/Slice/Map/flags/usa-flag1.png' %}" alt="usa flag" class="usa-flag-img">
 					</div>
 
-					<div class="us hovdiv" style="position: absolute;width: 300px;height: auto;bottom: 35%;left: 1%;z-index: 13;background: black;padding: 10px;border: #FFF 1px solid;display: none;">
+					<div class="us hovdiv">
 						<h2 class="text-primary p-3 " style="float:left" id="count">USA</h2>
 						<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
 						<span class="clearfix"></span>
@@ -279,14 +241,11 @@
 
 			<!--australia-->
 
-					<div class="australia" style="position: absolute;bottom:17.5%;left: 75%">
-						<img src="{% static 'images/Slice/Map/australia.png' %}" alt="" style="max-width:70%;height: auto;">
-					</div>
-					<div class="australia" id="australia" style="position: absolute;bottom:23%;left: 80%">
-						<img src="{% static 'images/Slice/Map/flags/australia-flag.png' %}" alt="" style="max-width:60%;height: auto;">
+					<div class="australia flag" id="australia">
+						<img src="{% static 'images/Slice/Map/flags/australia-flag1.png' %}" class="australia-flag-img" alt="australia flag" style="">
 					</div>
 
-					<div class="au hovdiv" style="position: absolute;width: 300px;height: auto;bottom: 15%;left: 70%;z-index: 14;background: black;padding: 10px;border: #FFF 1px solid;display: none;">
+					<div class="au hovdiv">
 						<h2 class="text-primary p-3 " style="float:left" id="count">AUSTRALIA</h2>
 						<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
 						<span class="clearfix"></span>
@@ -298,14 +257,11 @@
 
 			<!--singapore-->
 
-					<div class="singapore" style="position: absolute;bottom:36%;left: 72%">
-						<img src="{% static 'images/Slice/Map/singapore.png' %}" alt="" style="max-width:100%;height: auto;">
-					</div>
-					<div class="singapore" id="singapore" style="position: absolute;bottom:23%;left: 71%">
-						<img src="{% static 'images/Slice/Map/flags/singapore=flag.png' %}" alt="" style="max-width:60%;height: auto;">
+					<div class="singapore flag" id="singapore">
+						<img src="{% static 'images/Slice/Map/flags/singapore=flag1.png' %}" class="singapore-flag-img" alt="singapore flag">
 					</div>
 
-					<div class="sin hovdiv" style="position: absolute;width: 300px;height: auto;bottom: 0%;left:70%;z-index: 14;background: black;padding: 10px;border: #FFF 1px solid;display: none;">
+					<div class="sin hovdiv">
 						<h2 class="text-primary p-3 " style="float:left" id="count">SINGAPORE</h2>
 						<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
 						<span class="clearfix"></span>
@@ -317,14 +273,11 @@
 
 			<!--india-->
 
-					<div class="india" style="position: absolute;bottom:40%;left: 64%">
-						<img src="{% static 'images/Slice/Map/india.png' %}" alt="" style="max-width:80%;height: auto;">
-					</div>
-					<div class="india" id="india" style="position: absolute;bottom:48%;left: 63%">
-						<img src="{% static 'images/Slice/Map/flags/india-flag.png' %}" alt="" style="max-width:60%;height: auto;">
+					<div class="india flag" id="india">
+						<img src="{% static 'images/Slice/Map/flags/india-flag1.png' %}" class="india-flag-img" alt="india flag">
 					</div>
 
-					<div class="in hovdiv" style="position: absolute;width: 300px;height: auto;z-index: 15;bottom: 30%;left: 64%;background: black;padding: 10px;border: #FFF 1px solid;display: none;">
+					<div class="in hovdiv">
 						<h2 class="text-primary p-3 " style="float:left" id="count">INDIA</h2>
 						<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
 						<span class="clearfix"></span>
@@ -336,14 +289,11 @@
 
 			<!--malaysia-->
 
-					<div class="malaysia" style="position: absolute;bottom:38%;left: 70.5%">
-						<img src="{% static 'images/Slice/Map/malaysia.png' %}" alt="" style="max-width:100%;height: auto;">
-					</div>
-					<div class="malaysia" id="malaysia" style="position: absolute;bottom:34%;left: 64%">
-						<img src="{% static 'images/Slice/Map/flags/malaysia-flag.png' %}" alt="" style="max-width:60%;height: auto;">
+					<div class="malaysia flag" id="malaysia">
+						<img src="{% static 'images/Slice/Map/flags/malaysia-flag1.png' %}" class="malaysia-flag-img" alt="malaysia flag" >
 					</div>
 
-					<div class="mal hovdiv" style="position: absolute;width: 300px;height: auto;background: black;padding: 10px;z-index: 16;bottom: 30%;left: 70%;border: #FFF 1px solid;display: none;">
+					<div class="mal hovdiv">
 						<h2 class="text-primary p-3 " style="float:left" id="count">MALAYSIA</h2>
 						<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
 						<span class="clearfix"></span>
@@ -355,13 +305,10 @@
 
 			<!--indonesia-->
 
-					<div class="indonesia" style="position: absolute;bottom:33%;left: 70%">
-						<img src="{% static 'images/Slice/Map/indonesia.png' %}" alt="" style="max-width:80%;height: auto;">
+					<div class="indonesia flag" id="indonesia">
+						<img src="{% static 'images/Slice/Map/flags/indonesia-flag1.png' %}" class="indonesia-flag-img" alt="indonesia flag" >
 					</div>
-					<div class="indonesia" id="indonesia" style="position: absolute;bottom:35%;left: 77%">
-						<img src="{% static 'images/Slice/Map/flags/indonesia-flag.png' %}" alt="" style="max-width:60%;height: auto;">
-					</div>
-					<div class="indo hovdiv" style="position: absolute;width: 300px;height: auto;bottom: 20%;left:70%;background: black;padding: 10px;z-index: 16;border: #FFF 1px solid;display: none;">
+					<div class="indo hovdiv">
 						<h2 class="text-primary p-3 " style="float:left" id="count">INDONESIA</h2>
 						<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
 						<span class="clearfix"></span>
@@ -374,14 +321,11 @@
 
 			<!--japan-->
 
-					<div class="japan" style="position: absolute;bottom:48%;left: 82%">
-						<img src="{% static 'images/Slice/Map/japan.png' %}" alt="" style="max-width:80%;height: auto;">
-					</div>
-					<div class="japan" id="japan" style="position: absolute;bottom:55%;left: 83%">
-						<img src="{% static 'images/Slice/Map/flags/japan-flag.png' %}" alt="" style="max-width:60%;height: auto;">
+					<div class="japan flag" id="japan">
+						<img src="{% static 'images/Slice/Map/flags/japan-flag1.png' %}" class="japan-flag-img" alt="japan flag">
 					</div>
 
-					<div class="jap hovdiv" style="position: absolute;width: 300px;height: auto;bottom:56%;left: 70%;background: black;padding: 10px;z-index: 18;border: #FFF 1px solid;display: none;">
+					<div class="jap hovdiv">
 						<h2 class="text-primary p-3 " style="float:left" id="count">JAPAN</h2>
 						<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
 						<span class="clearfix"></span>
@@ -394,13 +338,10 @@
 
 			<!--china-->
 
-					<div class="china" style="position: absolute;bottom:41%;left: 66%">
-						<img src="{% static 'images/Slice/Map/china.png' %}" alt="" style="max-width:72%;height: auto;">
+					<div class="china flag" id="china">
+						<img src="{% static 'images/Slice/Map/flags/china-flag1.png' %}" class="china-flag-img" alt="china flag">
 					</div>
-					<div class="china" id="china" style="position: absolute;bottom:50%;left: 72%">
-						<img src="{% static 'images/Slice/Map/flags/china-flag.png' %}" alt="" style="max-width:60%;height: auto;">
-					</div>
-					<div class="chi hovdiv" style="position: absolute;width: 300px;height: auto;z-index: 20;background: black;padding: 10px;bottom: 70%;left: 66%;border: #FFF 1px solid;display: none;">
+					<div class="chi hovdiv">
 						<h2 class="text-primary p-3 " style="float:left" id="count">CHINA</h2>
 						<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
 						<span class="clearfix"></span>
@@ -411,6 +352,13 @@
 					</div>
 				</div>
 			</div>
+
+<!-- 
+			<div class="mobile-bg visible-sm visible-xs hidden-md hidden-xl hidden-lg">
+				<img src="images/Slice/Map/map.jpg" style="  display: block;height: 40vh;object-fit: contain;
+" class="img-responsive">
+			</div>
+ -->
 		</div>
 		<!-- End content -->
 

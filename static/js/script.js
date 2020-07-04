@@ -166,6 +166,9 @@ $(document).ready(function($) {
 						autoPlay: 10000,
 						navigation : true,
 						items : dataNum,
+						  animateOut: 'slideOutUp',
+  animateIn: 'slideInUp',
+
 						itemsDesktop : [1199,dataNum2],
 						itemsDesktopSmall : [991,dataNum3],
 						itemsTablet : [768, dataNum3],
@@ -212,7 +215,7 @@ $(document).ready(function($) {
 	
 	try{		
 		slidertestimonial.bxSlider({
-			mode: 'horizontal'
+			mode: 'vertical'
 		});
 	} catch(err) {
 	}

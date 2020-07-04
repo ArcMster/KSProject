@@ -20,7 +20,12 @@
  17.Contact
  18.Responsive part
 -------------------------------------------------*/
-
+body {
+  background-color: unset;
+}
+html {
+  background-color: rgba(0,0,0,.9)
+}
 /* import google fonts */
 @import url("https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900|Poppins:300,400,500,600,700");
 .reset-elem, header nav.nav-menu ul.menu-list, header .social-box ul.social-icons, section.team-section .team-box .team-box-side .team-post .hover-team .inner-team ul.social-team, ul.filter, .blog-page-section .blog-page-box .blog-post .post-content ul.post-meta, .pagination-box ul.page-list, .sidebar .category-widget ul, .sidebar .popular-widget ul.popular-list, .sidebar .tags-widget ul.tags-list, section.testimonial-section .testimonial-box ul.bxslider, section.clients-section .clients-box ul.client-list, section.single-post .share-tag-box ul, .comment-area-box > ul, section.single-project-section .single-content .project-content ul.social-icons, section.single-project-section .single-content .project-content ul.detail-list {
@@ -81,7 +86,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  background: rgba(0,0,0,.9);
+  background: rgba(0,0,0,0);
   min-height: 100%;
   z-index: 99999;
   display: flex;
@@ -249,7 +254,7 @@ a.elemadded {
 /*------------------------------------------------- */
 #content {
   margin-left: 325px;
-  padding: 40px;background: rgba(0,0,0,.9); }
+  padding: 40px;background: rgba(0,0,0,0); }
 
 .container {
   max-width: 100%; }
@@ -501,12 +506,12 @@ section.page-banner-section.portfolio-ban {
    */ }
   @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
     section.page-banner-section.portfolio-ban {
-      background: #111 url("../upload/banners/3@2x.jpg") center center no-repeat;
-      background-size: cover; } }
+      background: #111 url("../images/Slice/Map/mapbg.jpg") center center no-repeat;
+      background-size: contain; } }
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     section.page-banner-section.portfolio-ban {
       background: #111 url("../images/Slice/Map/mapbg.jpg") center center no-repeat;
-      background-size: cover; } }
+      background-size: contain; } }
 
 section.page-banner-section.blog-ban {
   /*
@@ -800,6 +805,227 @@ ul.filter {
    * If anything went wrong trying to separate the file from its
    * extension, set a background value without doing anything to it.
    */ }
+
+
+/************** MAP **************/
+
+#egypt{
+  position: absolute;bottom:51%;left: 51.5%;width:50px;
+}
+.egypt-flag-img{
+  max-width:100%;height: auto;
+}
+.eg {
+  position: absolute;
+  width: 300px;
+  height: auto;
+  left: 53%;
+  bottom:55%;
+  background: black;
+  padding: 10px;
+  border: #FFF 1px solid;
+  display: none;
+  z-index: 2
+}
+#saudi{
+  position: absolute;bottom:52%;left: 55%;width:50px
+}
+.saudi-flag-img {
+  max-width:100%;height: auto
+}
+.sa {
+  position: absolute;width: 300px;height: auto;bottom:50%;
+  left:56%;background: black;padding: 10px;border: #FFF 1px solid;display: none;z-index: 3
+}
+#qatar {
+  position: absolute;bottom:49%;left: 58%;width:50px
+}
+.qatar-flag-img {
+ max-width:100%;height: auto 
+}
+.qa {
+  position: absolute;width: 300px;height: auto;bottom:52%;left:61%;
+  background: black;padding: 10px;z-index:4;border: #FFF 1px solid;display: none
+}
+#algeria {
+  position: absolute;bottom:41%;left: 45%;width:50px
+}
+.algeria-flag-img {
+  max-width:100%;height: auto
+}
+.al {
+  position: absolute;width: 300px;height: auto;bottom:52%;
+  left:45%;background: black;padding: 10px;border: #FFF 1px solid;display: none;z-index: 5
+}
+#tunisia{
+  position: absolute;bottom:56.8%;left: 46.8%;width:50px
+}
+.tunisia-flag-img {
+  max-width:100%;height: auto;
+}
+.tu {
+  position: absolute;width: 300px;height: auto;bottom:55%;left:50%;
+  background: black;padding: 10px;z-index:6;border: #FFF 1px solid;display: none;
+}
+#morocco {
+  position: absolute;bottom:53%;left: 42%;width:50px
+}
+.morocco-flag-img {
+  max-width:100%;height: auto;
+}
+.mo {
+  position: absolute;width: 300px;height: auto;bottom:54%;left:44%;z-index:7;
+  background: black;padding: 10px;/* left: 100px; */border: #FFF 1px solid;display: none;
+}
+#south-africa {
+  position: absolute;bottom:25%;left: 50%;width:50px
+}
+.south-africa-flag-img {
+  max-width:100%;height: auto;
+}
+.sou {
+  position: absolute;width: 300px;height: auto;bottom:2%;left:55%;
+  background: black;padding: 10px;z-index: 8;border: #FFF 1px solid;display: none
+}
+#uae {
+  position: absolute;bottom:39%;left: 57%;width:50px
+}
+.uae-flag-img {
+  max-width:100%;height: auto
+}
+.ua {
+  position: absolute;width: 300px;height: auto;bottom: 52%;
+  background: black;padding: 10px;left:61%;border: #FFF 1px solid;display: none;z-index: 9
+}
+#brazil {
+  position: absolute;bottom:35%;left: 33%;width:50px
+}
+.brazil-flag-img {
+  max-width:100%;height: auto;
+}
+.bra {
+  position: absolute;width: 300px;height: auto;z-index: 10;bottom:27%;left: 25%;
+  background: black;padding: 10px;border: #FFF 1px solid;display: none
+}
+#argentina {
+  position: absolute;bottom:25%;left: 29%;width:50px
+}
+.argentina-flag-img {
+  max-width:100%;height: auto;
+}
+.arg {
+  position: absolute;width: 300px;height: auto;z-index: 11;background: black;
+  padding: 10px;bottom: 15%;left:2% ;border: #FFF 1px solid;display: none;
+}
+#canada{
+  position: absolute;bottom:70%;left: 15%;width:50px
+}
+.canada-flag-img {
+  max-width:100%;height: auto;
+}
+.can {
+  position: absolute;width: 300px;height: auto;bottom: 62%;left: 2;
+  background: black;padding: 10px;z-index: 12;border: #FFF 1px solid;display: none;
+}
+#usa {
+  position: absolute;bottom:57%;left: 18%;width:50px
+}
+.usa-flag-img {
+  max-width:100%;height: auto
+}
+.us {
+  position: absolute;width: 300px;height: auto;bottom: 35%;left: 1%;z-index: 13;
+  background: black;padding: 10px;border: #FFF 1px solid;display: none
+}
+
+#australia {
+  position: absolute;bottom:23%;left: 80%;width:50px
+}
+.australia-flag-img {
+  max-width:100%;height: auto;
+}
+.au {
+  position: absolute;width: 300px;height: auto;bottom: 15%;left: 70%;z-index: 14;
+  background: black;padding: 10px;border: #FFF 1px solid;display: none;
+}
+#singapore {
+  position: absolute;bottom:27%;left: 71%;width:50px
+}
+.singapore-flag-img {
+  max-width:100%;height: auto;
+}
+.sin {
+  position: absolute;width: 300px;height: auto;bottom: 0%;left:70%;z-index: 14;
+  background: black;padding: 10px;border: #FFF 1px solid;display: none;
+}
+#india {
+  position: absolute;bottom:50%;left: 65%;width:50px
+}
+.india-flag-img {
+  max-width:100%;height: auto;
+}
+.in {
+  position: absolute;width: 300px;height: auto;z-index: 15;bottom: 30%;left: 64%;
+  background: black;padding: 10px;border: #FFF 1px solid;display: none;
+}
+
+#malaysia {
+  position: absolute;bottom:36%;left: 68%;width:50px
+}
+.malaysia-flag-img {
+  max-width:100%;height: auto;
+}
+.mal {
+  position: absolute;width: 300px;height: auto;background: black;
+  padding: 10px;z-index: 16;bottom: 30%;left: 70%;border: #FFF 1px solid;display: none;
+}
+#indonesia {
+  position: absolute;bottom:35%;left: 77%;width:50px
+}
+.indonesia-flag-img {
+  max-width:100%;height: auto
+}
+.indo {
+  position: absolute;width: 300px;height: auto;bottom: 20%;left:70%;
+  background: black;padding: 10px;z-index: 16;border: #FFF 1px solid;display: none;
+}
+#japan {
+  position: absolute;bottom:59%;left: 80%;width:50px
+}
+.japan-flag-img {
+  max-width:100%;height: auto
+}
+.jap {
+  position: absolute;width: 300px;height: auto;bottom:56%;left: 70%;
+  background: black;padding: 10px;z-index: 18;border: #FFF 1px solid;display: none;
+}
+#china {
+  position: absolute;bottom:55%;left: 70%;width:50px
+}
+
+.china-flag-img {
+  max-width:100%;height: auto;
+}
+
+.chi {
+  position: absolute;width: 300px;height: auto;z-index: 20;
+  background: black;padding: 10px;bottom: 70%;left: 66%;border: #FFF 1px solid;display: none;
+}
+
+
+
+.countries-bg {
+  position: relative;background: url(../images/Slice/Map/world-map.png) center center;
+  background-size: cover;height: 100vh
+}
+.flag {
+  transition: all .2s ease-in-out;
+}
+.flag:hover {
+cursor: pointer;
+transform: scale(1.5,1.5);
+}
+
       @media all and (-webkit-min-device-pixel-ratio: 1.5), all and (-o-min-device-pixel-ratio: 3 / 2), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
         .blog-page-section .blog-page-box .blog-post.quote-post blockquote {
           background: #111 url("../upload/blog/back@2x.jpg") center center no-repeat;
@@ -1006,7 +1232,9 @@ section.about-section {
 /*------------------------------------------------- */
 section.testimonial-section {
   padding: 90px 0;
-  background: url(../images/Slice/About-Us/2.jpg) center fixed;}
+  /*background: url(../images/Slice/About-Us/2.jpg) center fixed*/;
+  background-color: #494949
+  }
   section.testimonial-section .testimonial-box {
     text-align: center; }
     section.testimonial-section .testimonial-box p {
@@ -1066,7 +1294,10 @@ section.statistic-section {
   section.statistic-section .statistic-post {
     float: left;
     width: 20%;
-    padding-left: 30px; }
+    padding-left: 50px; }
+    section.statistic-section .statistic-post img {
+      margin-bottom: 10px
+    }
     section.statistic-section .statistic-post i {
       color: #fff;
       font-size: 36px;
@@ -1533,13 +1764,6 @@ section.contact-form-section {
     margin-left: 0; }
   .comment-area-box ul.depth .comment-box {
     padding-left: 0; } 
-        #content .cover {
-        background: url(../images/Slice/Map/map.jpg) center center;
-        background-size: contain;
-      }
-    #content .cover .countries {
-      display: none;
-    }
 }
 
 @media (max-width: 600px) {
@@ -1551,18 +1775,20 @@ section.contact-form-section {
     section.testimonial-section .testimonial-box p {
       max-width: 450px
       }
-    #content .cover {
-        background: url(../images/Slice/Map/map.jpg) center center;
-        background-size: contain;
-      }
-    #content .cover .countries {
-      display: none;
-    }
   }
 
 @media (max-width: 460px) {
+  section.statistic-section .statistic-box {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
   section.statistic-section .statistic-post {
-    width: 50%; }
+    width: 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    }
   section.page-banner-section {
     padding: 20px; }
     section.page-banner-section h1 {
@@ -1578,12 +1804,1181 @@ section.contact-form-section {
 */    section.testimonial-section .testimonial-box p {
       max-width: 250px
       }
-      #content .cover {
-        background: url(../images/Slice/Map/map.jpg) center center;
-        background-size: contain;
-      }
-    #content .cover .countries {
-      display: none;
+
+    .countries-bg {
+      position: relative;background: url(../images/Slice/Map/world-map.png) center center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 50vh
     }
 
+    #egypt{
+      position: absolute;bottom:51%;left: 51.5%;width: 20px
     }
+    .egypt-flag-img{
+      max-width:90%;height: auto;
+    }
+    .eg {
+      bottom: 35%;left: 0;
+      z-index: 2
+    }
+    #saudi{
+      position: absolute;bottom:52%;left: 56%;width: 20px
+    }
+    .saudi-flag-img {
+      max-width:90%;height: auto
+    }
+    .sa {
+      bottom: 35%;left: 0;z-index: 3
+    }
+    #qatar {
+      position: absolute;bottom:49.3%;left: 58%;width: 20px
+    }
+    .qatar-flag-img {
+     max-width:90%;height: auto 
+    }
+    .qa {
+      bottom: 35%;left:0;
+      z-index:4
+    }
+    #algeria {
+      position: absolute;bottom:43%;left: 45%;width: 20px
+    }
+    .algeria-flag-img {
+      max-width:90%;height: auto
+    }
+    .al {
+      bottom: 35%;left: 0;z-index: 5
+    }
+    #tunisia{
+      position: absolute;bottom:55%;left: 46.5%;width: 20px
+    }
+    .tunisia-flag-img {
+      max-width:90%;height: auto;
+    }
+    .tu {
+      bottom: 35%;left: 0;
+      z-index:6;
+    }
+    #morocco {
+      position: absolute;bottom:53%;left: 42%;width: 20px
+    }
+    .morocco-flag-img {
+      max-width:90%;height: auto;
+    }
+    .mo {
+      bottom:35%;left:0;z-index:7;
+      }
+    #south-africa {
+      position: absolute;bottom:33%;left: 50%;width: 20px
+    }
+    .south-africa-flag-img {
+      max-width:90%;height: auto;
+    }
+    .sou {
+      bottom:35%;left:0;
+      z-index: 8;
+    }
+    #uae {
+      position: absolute;bottom:41.5%;left: 57.5%;width: 20px
+    }
+    .uae-flag-img {
+      max-width:90%;height: auto
+    }
+    .ua {
+      bottom: 35%;left:0;z-index: 9
+    }
+    #brazil {
+      position: absolute;bottom:40%;left: 31%;width: 20px
+    }
+    .brazil-flag-img {
+      max-width:90%;height: auto;
+    }
+    .bra {
+      z-index: 10;bottom: 35%;left: 0;
+    }
+    #argentina {
+      position: absolute;bottom:32%;left: 27%;width: 20px
+    }
+    .argentina-flag-img {
+      max-width:90%;height: auto;
+    }
+    .arg {
+      z-index: 11;bottom: 35%;left: 0 ;
+    }
+    #canada {
+      width:20px; position: absolute;bottom:66%;left: 17%
+
+    }
+    .canada-flag-img {
+      max-width:90%;height: auto;
+    }
+    .can {
+      bottom: 35%;left: 0;
+      z-index: 12;
+    }
+    #usa {
+      width: 20px;  position: absolute;bottom:55%;left: 19%
+
+    }
+    .usa-flag-img {
+      max-width:90%;height: auto
+    }
+    .us {
+      bottom: 35%;left: 0;z-index: 13;
+    }
+
+    #australia {
+      position: absolute;bottom:33%;left: 79%;width: 20px
+    }
+    .australia-flag-img {
+      max-width:90%;height: auto;
+    }
+    .au {
+      bottom: 35%;left: 0;z-index: 14;
+    }
+    #singapore {
+      position: absolute;bottom:33%;left: 71%;width: 20px
+    }
+    .singapore-flag-img {
+      max-width:90%;height: auto;
+    }
+    .sin {
+      bottom: 35%;left:0;z-index: 14;
+    }
+    #india {
+      position: absolute;bottom:50%;left: 64%;width: 20px
+    }
+    .india-flag-img {
+      max-width:90%;height: auto;
+    }
+    .in {
+      z-index: 15;bottom: 35%;left: 0;
+    }
+
+    #malaysia {
+      position: absolute;bottom:39.5%;left: 65.5%;width: 20px
+    }
+    .malaysia-flag-img {
+      max-width:90%;height: auto;
+    }
+    .mal {
+      z-index: 16;bottom: 35%;left: 0
+    }
+    #indonesia {
+      position: absolute;bottom:40%;left: 77%;width: 20px
+    }
+    .indonesia-flag-img {
+      max-width:90%;height: auto
+    }
+    .indo {
+      height: auto;bottom: 35%;left:0;
+    }
+    #japan {
+      position: absolute;bottom:56%;left: 79%;width: 20px
+    }
+    .japan-flag-img {
+      max-width:90%;height: auto
+    }
+    .jap {
+      bottom:35%;left: 0;
+      z-index: 18;
+    }
+    #china {
+      position: absolute;bottom:55%;left: 70%;width: 20px
+    }
+
+    .china-flag-img {
+      max-width:90%;height: auto;
+    }
+    .chi {
+      z-index: 20;bottom: 35%;left: 0;
+    }
+
+}
+
+@media screen and (min-width:521px) and (max-width:767.9px ) {
+      .countries-bg {
+      position: relative;background: url(../images/Slice/Map/world-map.png) center center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 50vh
+    }
+
+    #egypt{
+      position: absolute;bottom:51%;left: 52%;width: 30px
+    }
+    .egypt-flag-img{
+      max-width:90%;height: auto;
+    }
+    .eg {
+      bottom: 35%;left: 0;
+      z-index: 2
+    }
+    #saudi{
+      position: absolute;bottom:52%;left: 56%;width: 30px
+    }
+    .saudi-flag-img {
+      max-width:90%;height: auto
+    }
+    .sa {
+      bottom: 35%;left: 0;z-index: 3
+    }
+    #qatar {
+      position: absolute;bottom:49.3%;left: 58.8%;width: 30px
+    }
+    .qatar-flag-img {
+     max-width:90%;height: auto 
+    }
+    .qa {
+      bottom: 35%;left:0;
+      z-index:4
+    }
+    #algeria {
+      position: absolute;bottom:44%;left: 45%;width: 30px
+    }
+    .algeria-flag-img {
+      max-width:90%;height: auto
+    }
+    .al {
+      bottom: 35%;left: 0;z-index: 5
+    }
+    #tunisia{
+      position: absolute;bottom:54.7%;left: 47%;width: 30px
+    }
+    .tunisia-flag-img {
+      max-width:90%;height: auto;
+    }
+    .tu {
+      bottom: 35%;left: 0;
+      z-index:6;
+    }
+    #morocco {
+      position: absolute;bottom:53%;left: 43%;width: 30px
+    }
+    .morocco-flag-img {
+      max-width:90%;height: auto;
+    }
+    .mo {
+      bottom:35%;left:0;z-index:7;
+      }
+    #south-africa {
+      position: absolute;bottom:32%;left: 50%;width: 30px
+    }
+    .south-africa-flag-img {
+      max-width:90%;height: auto;
+    }
+    .sou {
+      bottom:35%;left:0;
+      z-index: 8;
+    }
+    #uae {
+      position: absolute;bottom:42.5%;left: 57.5%;width: 30px
+    }
+    .uae-flag-img {
+      max-width:90%;height: auto
+    }
+    .ua {
+      bottom: 35%;left:0;z-index: 9
+    }
+    #brazil {
+      position: absolute;bottom:40%;left: 31%;width: 30px
+    }
+    .brazil-flag-img {
+      max-width:90%;height: auto;
+    }
+    .bra {
+      z-index: 10;bottom: 35%;left: 0;
+    }
+    #argentina {
+      position: absolute;bottom:32%;left: 29%;width: 30px
+    }
+    .argentina-flag-img {
+      max-width:90%;height: auto;
+    }
+    .arg {
+      z-index: 11;bottom: 35%;left: 0 ;
+    }
+    #canada {
+      width:30px; position: absolute;bottom:66%;left: 17%
+
+    }
+    .canada-flag-img {
+      max-width:90%;height: auto;
+    }
+    .can {
+      bottom: 35%;left: 0;
+      z-index: 12;
+    }
+    #usa {
+      width: 30px;  position: absolute;bottom:55%;left: 19%
+
+    }
+    .usa-flag-img {
+      max-width:90%;height: auto
+    }
+    .us {
+      bottom: 35%;left: 0;z-index: 13;
+    }
+
+    #australia {
+      position: absolute;bottom:33%;left: 79%;width: 30px
+    }
+    .australia-flag-img {
+      max-width:90%;height: auto;
+    }
+    .au {
+      bottom: 35%;left: 0;z-index: 14;
+    }
+    #singapore {
+      position: absolute;bottom:35%;left: 71%;width:30px
+    }
+    .singapore-flag-img {
+      max-width:90%;height: auto;
+    }
+    .sin {
+      bottom: 35%;left:0;z-index: 14;
+    }
+    #india {
+      position: absolute;bottom:50%;left: 64%;width: 30px
+    }
+    .india-flag-img {
+      max-width:90%;height: auto;
+    }
+    .in {
+      z-index: 15;bottom: 35%;left: 0;
+    }
+
+    #malaysia {
+      position: absolute;bottom:39.5%;left: 68%;width: 30px
+    }
+    .malaysia-flag-img {
+      max-width:90%;height: auto;
+    }
+    .mal {
+      z-index: 16;bottom: 35%;left: 0
+    }
+    #indonesia {
+      position: absolute;bottom:40%;left: 77%;width: 30px
+    }
+    .indonesia-flag-img {
+      max-width:90%;height: auto
+    }
+    .indo {
+      height: auto;bottom: 35%;left:0;
+    }
+    #japan {
+      position: absolute;bottom:56%;left: 79%;width: 30px
+    }
+    .japan-flag-img {
+      max-width:90%;height: auto
+    }
+    .jap {
+      bottom:35%;left: 0;
+      z-index: 18;
+    }
+    #china {
+      position: absolute;bottom:55%;left: 70%;width: 30px
+    }
+
+    .china-flag-img {
+      max-width:90%;height: auto;
+    }
+    .chi {
+      z-index: 20;bottom: 35%;left: 0;
+    }
+
+}
+
+@media screen and (min-width:768px) and (max-width:991.9px ) {
+      .countries-bg {
+      position: relative;background: url(../images/Slice/Map/world-map.png) center center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 50vh
+    }
+
+    #egypt{
+      position: absolute;bottom:51%;left: 52%;width: 30px
+    }
+    .egypt-flag-img{
+      max-width:100%;height: auto;
+    }
+    .eg {
+      bottom: 35%;left: 0;
+      z-index: 2
+    }
+    #saudi{
+      position: absolute;bottom:52%;left: 56%;width: 30px
+    }
+    .saudi-flag-img {
+      max-width:100%;height: auto
+    }
+    .sa {
+      bottom: 35%;left: 0;z-index: 3
+    }
+    #qatar {
+      position: absolute;bottom:49.3%;left: 58.8%;width: 30px
+    }
+    .qatar-flag-img {
+     max-width:100%;height: auto 
+    }
+    .qa {
+      bottom: 35%;left:0;
+      z-index:4
+    }
+    #algeria {
+      position: absolute;bottom:44%;left: 45%;width: 30px
+    }
+    .algeria-flag-img {
+      max-width:100%;height: auto
+    }
+    .al {
+      bottom: 35%;left: 0;z-index: 5
+    }
+    #tunisia{
+      position: absolute;bottom:54.7%;left: 47%;width: 30px
+    }
+    .tunisia-flag-img {
+      max-width:100%;height: auto;
+    }
+    .tu {
+      bottom: 35%;left: 0;
+      z-index:6;
+    }
+    #morocco {
+      position: absolute;bottom:53%;left: 43%;width: 30px
+    }
+    .morocco-flag-img {
+      max-width:100%;height: auto;
+    }
+    .mo {
+      bottom:35%;left:0;z-index:7;
+      }
+    #south-africa {
+      position: absolute;bottom:32%;left: 50%;width: 30px
+    }
+    .south-africa-flag-img {
+      max-width:100%;height: auto;
+    }
+    .sou {
+      bottom:35%;left:0;
+      z-index: 8;
+    }
+    #uae {
+      position: absolute;bottom:42.5%;left: 57.5%;width: 30px
+    }
+    .uae-flag-img {
+      max-width:100%;height: auto
+    }
+    .ua {
+      bottom: 35%;left:0;z-index: 9
+    }
+    #brazil {
+      position: absolute;bottom:40%;left: 31%;width: 30px
+    }
+    .brazil-flag-img {
+      max-width:100%;height: auto;
+    }
+    .bra {
+      z-index: 10;bottom: 35%;left: 0;
+    }
+    #argentina {
+      position: absolute;bottom:32%;left: 29%;width: 30px
+    }
+    .argentina-flag-img {
+      max-width:100%;height: auto;
+    }
+    .arg {
+      z-index: 11;bottom: 35%;left: 0 ;
+    }
+    #canada {
+      width:30px; position: absolute;bottom:66%;left: 17%
+
+    }
+    .canada-flag-img {
+      max-width:100%;height: auto;
+    }
+    .can {
+      bottom: 35%;left: 0;
+      z-index: 12;
+    }
+    #usa {
+      width: 30px;  position: absolute;bottom:55%;left: 19%
+
+    }
+    .usa-flag-img {
+      max-width:100%;height: auto
+    }
+    .us {
+      bottom: 35%;left: 0;z-index: 13;
+    }
+
+    #australia {
+      position: absolute;bottom:33%;left: 79%;width: 30px
+    }
+    .australia-flag-img {
+      max-width:100%;height: auto;
+    }
+    .au {
+      bottom: 35%;left: 0;z-index: 14;
+    }
+    #singapore {
+      position: absolute;bottom:35%;left: 71%;width:30px
+    }
+    .singapore-flag-img {
+      max-width:100%;height: auto;
+    }
+    .sin {
+      bottom: 35%;left:0;z-index: 14;
+    }
+    #india {
+      position: absolute;bottom:50%;left: 64%;width: 30px
+    }
+    .india-flag-img {
+      max-width:100%;height: auto;
+    }
+    .in {
+      z-index: 15;bottom: 35%;left: 0;
+    }
+
+    #malaysia {
+      position: absolute;bottom:39.5%;left: 68%;width: 30px
+    }
+    .malaysia-flag-img {
+      max-width:100%;height: auto;
+    }
+    .mal {
+      z-index: 16;bottom: 35%;left: 0
+    }
+    #indonesia {
+      position: absolute;bottom:40%;left: 77%;width: 30px
+    }
+    .indonesia-flag-img {
+      max-width:100%;height: auto
+    }
+    .indo {
+      height: auto;bottom: 35%;left:0;
+    }
+    #japan {
+      position: absolute;bottom:56%;left: 79%;width: 30px
+    }
+    .japan-flag-img {
+      max-width:100%;height: auto
+    }
+    .jap {
+      bottom:35%;left: 0;
+      z-index: 18;
+    }
+    #china {
+      position: absolute;bottom:55%;left: 70%;width: 30px
+    }
+
+    .china-flag-img {
+      max-width:100%;height: auto;
+    }
+    .chi {
+      z-index: 20;bottom: 35%;left: 0;
+    }
+
+}
+
+
+@media screen and (min-width:992px) and (max-width:1199.9px ) {
+      .countries-bg {
+      position: relative;background: url(../images/Slice/Map/world-map.png) center center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 50vh
+    }
+
+    #egypt{
+      position: absolute;bottom:51.5%;left: 51%;width: 50px
+    }
+    .egypt-flag-img{
+      max-width:100%;height: auto;
+    }
+    .eg {
+      bottom: 35%;left: 0;
+      z-index: 2
+    }
+    #saudi{
+      position: absolute;bottom:51.8%;left: 55%;width: 50px
+    }
+    .saudi-flag-img {
+      max-width:100%;height: auto
+    }
+    .sa {
+      bottom: 35%;left: 0;z-index: 3
+    }
+    #qatar {
+      position: absolute;bottom:49.3%;left: 57.8%;width: 50px
+    }
+    .qatar-flag-img {
+     max-width:100%;height: auto 
+    }
+    .qa {
+      bottom: 35%;left:0;
+      z-index:4
+    }
+    #algeria {
+      position: absolute;bottom:44%;left: 45%;width: 50px
+    }
+    .algeria-flag-img {
+      max-width:100%;height: auto
+    }
+    .al {
+      bottom: 35%;left: 0;z-index: 5
+    }
+    #tunisia{
+      position: absolute;bottom:54%;left: 45.9%;width: 50px
+    }
+    .tunisia-flag-img {
+      max-width:100%;height: auto;
+    }
+    .tu {
+      bottom: 35%;left: 0;
+      z-index:6;
+    }
+    #morocco {
+      position: absolute;bottom:52%;left: 41.7%;width: 50px
+    }
+    .morocco-flag-img {
+      max-width:100%;height: auto;
+    }
+    .mo {
+      bottom:35%;left:0;z-index:7;
+      }
+    #south-africa {
+      position: absolute;bottom:34%;left: 50%;width: 50px
+    }
+    .south-africa-flag-img {
+      max-width:100%;height: auto;
+    }
+    .sou {
+      bottom:35%;left:0;
+      z-index: 8;
+    }
+    #uae {
+      position: absolute;bottom:40.5%;left: 55.5%;width: 50px
+    }
+    .uae-flag-img {
+      max-width:100%;height: auto
+    }
+    .ua {
+      bottom: 35%;left:0;z-index: 9
+    }
+    #brazil {
+      position: absolute;bottom:40%;left: 31%;width: 50px
+    }
+    .brazil-flag-img {
+      max-width:100%;height: auto;
+    }
+    .bra {
+      z-index: 10;bottom: 35%;left: 0;
+    }
+    #argentina {
+      position: absolute;bottom:32%;left: 27%;width: 50px
+    }
+    .argentina-flag-img {
+      max-width:100%;height: auto;
+    }
+    .arg {
+      z-index: 11;bottom: 35%;left: 0 ;
+    }
+    #canada {
+      width:50px; position: absolute;bottom:66%;left: 17%
+
+    }
+    .canada-flag-img {
+      max-width:100%;height: auto;
+    }
+    .can {
+      bottom: 55%;left: 0;
+      z-index: 12;
+    }
+    #usa {
+      width: 50px;  position: absolute;bottom:55%;left: 19%
+
+    }
+    .usa-flag-img {
+      max-width:100%;height: auto
+    }
+    .us {
+      bottom: 35%;left: 0;z-index: 13;
+    }
+
+    #australia {
+      position: absolute;bottom:33%;left: 79%;width: 50px
+    }
+    .australia-flag-img {
+      max-width:100%;height: auto;
+    }
+    .au {
+      bottom: 35%;left: 0;z-index: 14;
+    }
+    #singapore {
+      position: absolute;bottom:33%;left: 69%;width:50px
+    }
+    .singapore-flag-img {
+      max-width:100%;height: auto;
+    }
+    .sin {
+      bottom: 35%;left:0;z-index: 14;
+    }
+    #india {
+      position: absolute;bottom:50%;left: 64%;width: 50px
+    }
+    .india-flag-img {
+      max-width:100%;height: auto;
+    }
+    .in {
+      z-index: 15;bottom: 35%;left: 0;
+    }
+
+    #malaysia {
+      position: absolute;bottom:39.5%;left: 65.5%;width: 50px
+    }
+    .malaysia-flag-img {
+      max-width:100%;height: auto;
+    }
+    .mal {
+      z-index: 16;bottom: 35%;left: 0
+    }
+    #indonesia {
+      position: absolute;bottom:40%;left: 77%;width: 50px
+    }
+    .indonesia-flag-img {
+      max-width:100%;height: auto
+    }
+    .indo {
+      height: auto;bottom: 35%;left:0;
+    }
+    #japan {
+      position: absolute;bottom:56%;left: 79%;width: 50px
+    }
+    .japan-flag-img {
+      max-width:100%;height: auto
+    }
+    .jap {
+      bottom:35%;left: 0;
+      z-index: 18;
+    }
+    #china {
+      position: absolute;bottom:55%;left: 70%;width: 50px
+    }
+
+    .china-flag-img {
+      max-width:100%;height: auto;
+    }
+    .chi {
+      z-index: 20;bottom: 35%;left: 0;
+    }
+
+}
+@media screen and (min-width: 1400px) and (max-width: 2000px) {
+        .countries-bg {
+      position: relative;background: url(../images/Slice/Map/world-map.png) center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100vh
+    }
+
+    #egypt{
+      position: absolute;bottom:51%;left: 53%;width: 50px
+    }
+    .egypt-flag-img{
+      max-width:100%;height: auto;
+    }
+    .eg {
+      bottom: 35%;left: 0;
+      z-index: 2
+    }
+    #saudi{
+      position: absolute;bottom:51.8%;left: 57%;width: 50px
+    }
+    .saudi-flag-img {
+      max-width:100%;height: auto
+    }
+    .sa {
+      bottom: 35%;left: 0;z-index: 3
+    }
+    #qatar {
+      position: absolute;bottom:49.3%;left: 59.5%;width: 50px
+    }
+    .qatar-flag-img {
+     max-width:100%;height: auto 
+    }
+    .qa {
+      bottom: 35%;left:0;
+      z-index:4
+    }
+    #algeria {
+      position: absolute;bottom:44%;left: 45%;width: 50px
+    }
+    .algeria-flag-img {
+      max-width:100%;height: auto
+    }
+    .al {
+      bottom: 35%;left: 0;z-index: 5
+    }
+    #tunisia{
+      position: absolute;bottom:54%;left: 46.2%;width: 50px
+    }
+    .tunisia-flag-img {
+      max-width:100%;height: auto;
+    }
+    .tu {
+      bottom: 35%;left: 0;
+      z-index:6;
+    }
+    #morocco {
+      position: absolute;bottom:52.5%;left: 41%;width: 50px
+    }
+    .morocco-flag-img {
+      max-width:100%;height: auto;
+    }
+    .mo {
+      bottom:35%;left:0;z-index:7;
+      }
+    #south-africa {
+      position: absolute;bottom:25%;left: 50%;width: 50px
+    }
+    .south-africa-flag-img {
+      max-width:100%;height: auto;
+    }
+    .sou {
+      bottom:35%;left:0;
+      z-index: 8;
+    }
+    #uae {
+      position: absolute;bottom:39%;left: 59%;width: 50px
+    }
+    .uae-flag-img {
+      max-width:100%;height: auto
+    }
+    .ua {
+      bottom: 35%;left:0;z-index: 9
+    }
+    #brazil {
+      position: absolute;bottom:36%;left: 30%;width: 50px
+    }
+    .brazil-flag-img {
+      max-width:100%;height: auto;
+    }
+    .bra {
+      z-index: 10;bottom: 35%;left: 0;
+    }
+    #argentina {
+      position: absolute;bottom:25%;left: 24%;width: 50px
+    }
+    .argentina-flag-img {
+      max-width:100%;height: auto;
+    }
+    .arg {
+      z-index: 11;bottom: 35%;left: 0 ;
+    }
+    #canada {
+      width:50px; position: absolute;bottom:70%;left: 15%
+
+    }
+    .canada-flag-img {
+      max-width:100%;height: auto;
+    }
+    .can {
+      bottom: 55%;left: 0;
+      z-index: 12;
+    }
+    #usa {
+      width: 50px;  position: absolute;bottom:57%;left: 19%
+
+    }
+    .usa-flag-img {
+      max-width:100%;height: auto
+    }
+    .us {
+      bottom: 35%;left: 0;z-index: 13;
+    }
+
+    #australia {
+      position: absolute;bottom:27%;left: 84%;width: 50px
+    }
+    .australia-flag-img {
+      max-width:100%;height: auto;
+    }
+    .au {
+      bottom: 35%;left: 0;z-index: 14;
+    }
+    #singapore {
+      position: absolute;bottom:28%;left: 75%;width:50px
+    }
+    .singapore-flag-img {
+      max-width:100%;height: auto;
+    }
+    .sin {
+      bottom: 35%;left:0;z-index: 14;
+    }
+    #india {
+      position: absolute;bottom:48%;left: 68%;width: 50px
+    }
+    .india-flag-img {
+      max-width:100%;height: auto;
+    }
+    .in {
+      z-index: 15;bottom: 35%;left: 0;
+    }
+
+    #malaysia {
+      position: absolute;bottom:35%;left: 71%;width: 50px
+    }
+    .malaysia-flag-img {
+      max-width:100%;height: auto;
+    }
+    .mal {
+      z-index: 16;bottom: 35%;left: 0
+    }
+    #indonesia {
+      position: absolute;bottom:35%;left: 79%;width: 50px
+    }
+    .indonesia-flag-img {
+      max-width:100%;height: auto
+    }
+    .indo {
+      height: auto;bottom: 35%;left:0;
+    }
+    #japan {
+      position: absolute;bottom:57%;left: 85%;width: 50px
+    }
+    .japan-flag-img {
+      max-width:100%;height: auto
+    }
+    .jap {
+      bottom:35%;left: 0;
+      z-index: 18;
+    }
+    #china {
+      position: absolute;bottom:57%;left: 75%;width: 50px
+    }
+
+    .china-flag-img {
+      max-width:100%;height: auto;
+    }
+    .chi {
+      z-index: 20;bottom: 35%;left: 0;
+    }
+    .flag:hover{
+      transform: scale(3,3)
+    }
+}
+@media screen and (min-width: 2001px) {
+    #egypt{
+    position: absolute;bottom:52%;left: 53.5%;width:50px;
+  }
+  .egypt-flag-img{
+    max-width:100%;height: auto;
+  }
+  .eg {
+    position: absolute;
+    width: 300px;
+    height: auto;
+    left: 53%;
+    bottom:55%;
+    background: black;
+    padding: 10px;
+    border: #FFF 1px solid;
+    display: none;
+    z-index: 2
+  }
+  #saudi{
+    position: absolute;bottom:52%;left: 57%;width:50px
+  }
+  .saudi-flag-img {
+    max-width:100%;height: auto
+  }
+  .sa {
+    position: absolute;width: 300px;height: auto;bottom:50%;
+    left:56%;background: black;padding: 10px;border: #FFF 1px solid;display: none;z-index: 3
+  }
+  #qatar {
+    position: absolute;bottom:49%;left: 58%;width:50px
+  }
+  .qatar-flag-img {
+   max-width:100%;height: auto 
+  }
+  .qa {
+    position: absolute;width: 300px;height: auto;bottom:52%;left:61%;
+    background: black;padding: 10px;z-index:4;border: #FFF 1px solid;display: none
+  }
+  #algeria {
+    position: absolute;bottom:41%;left: 45%;width:50px
+  }
+  .algeria-flag-img {
+    max-width:100%;height: auto
+  }
+  .al {
+    position: absolute;width: 300px;height: auto;bottom:52%;
+    left:45%;background: black;padding: 10px;border: #FFF 1px solid;display: none;z-index: 5
+  }
+  #tunisia{
+    position: absolute;bottom:56.8%;left: 46.8%;width:50px
+  }
+  .tunisia-flag-img {
+    max-width:100%;height: auto;
+  }
+  .tu {
+    position: absolute;width: 300px;height: auto;bottom:55%;left:50%;
+    background: black;padding: 10px;z-index:6;border: #FFF 1px solid;display: none;
+  }
+  #morocco {
+    position: absolute;bottom:53%;left: 42%;width:50px
+  }
+  .morocco-flag-img {
+    max-width:100%;height: auto;
+  }
+  .mo {
+    position: absolute;width: 300px;height: auto;bottom:54%;left:44%;z-index:7;
+    background: black;padding: 10px;/* left: 100px; */border: #FFF 1px solid;display: none;
+  }
+  #south-africa {
+    position: absolute;bottom:25%;left: 50%;width:50px
+  }
+  .south-africa-flag-img {
+    max-width:100%;height: auto;
+  }
+  .sou {
+    position: absolute;width: 300px;height: auto;bottom:2%;left:55%;
+    background: black;padding: 10px;z-index: 8;border: #FFF 1px solid;display: none
+  }
+  #uae {
+    position: absolute;bottom:39%;left: 57%;width:50px
+  }
+  .uae-flag-img {
+    max-width:100%;height: auto
+  }
+  .ua {
+    position: absolute;width: 300px;height: auto;bottom: 52%;
+    background: black;padding: 10px;left:61%;border: #FFF 1px solid;display: none;z-index: 9
+  }
+  #brazil {
+    position: absolute;bottom:35%;left: 33%;width:50px
+  }
+  .brazil-flag-img {
+    max-width:100%;height: auto;
+  }
+  .bra {
+    position: absolute;width: 300px;height: auto;z-index: 10;bottom:27%;left: 25%;
+    background: black;padding: 10px;border: #FFF 1px solid;display: none
+  }
+  #argentina {
+    position: absolute;bottom:25%;left: 29%;width:50px
+  }
+  .argentina-flag-img {
+    max-width:100%;height: auto;
+  }
+  .arg {
+    position: absolute;width: 300px;height: auto;z-index: 11;background: black;
+    padding: 10px;bottom: 15%;left:2% ;border: #FFF 1px solid;display: none;
+  }
+  #canada{
+    position: absolute;bottom:70%;left: 15%;width:50px
+  }
+  .canada-flag-img {
+    max-width:100%;height: auto;
+  }
+  .can {
+    position: absolute;width: 300px;height: auto;bottom: 62%;left: 2;
+    background: black;padding: 10px;z-index: 12;border: #FFF 1px solid;display: none;
+  }
+  #usa {
+    position: absolute;bottom:57%;left: 18%;width:50px
+  }
+  .usa-flag-img {
+    max-width:100%;height: auto
+  }
+  .us {
+    position: absolute;width: 300px;height: auto;bottom: 35%;left: 1%;z-index: 13;
+    background: black;padding: 10px;border: #FFF 1px solid;display: none
+  }
+
+  #australia {
+    position: absolute;bottom:23%;left: 80%;width:50px
+  }
+  .australia-flag-img {
+    max-width:100%;height: auto;
+  }
+  .au {
+    position: absolute;width: 300px;height: auto;bottom: 15%;left: 70%;z-index: 14;
+    background: black;padding: 10px;border: #FFF 1px solid;display: none;
+  }
+  #singapore {
+    position: absolute;bottom:27%;left: 71%;width:50px
+  }
+  .singapore-flag-img {
+    max-width:100%;height: auto;
+  }
+  .sin {
+    position: absolute;width: 300px;height: auto;bottom: 0%;left:70%;z-index: 14;
+    background: black;padding: 10px;border: #FFF 1px solid;display: none;
+  }
+  #india {
+    position: absolute;bottom:50%;left: 65%;width:50px
+  }
+  .india-flag-img {
+    max-width:100%;height: auto;
+  }
+  .in {
+    position: absolute;width: 300px;height: auto;z-index: 15;bottom: 30%;left: 64%;
+    background: black;padding: 10px;border: #FFF 1px solid;display: none;
+  }
+
+  #malaysia {
+    position: absolute;bottom:36%;left: 68%;width:50px
+  }
+  .malaysia-flag-img {
+    max-width:100%;height: auto;
+  }
+  .mal {
+    position: absolute;width: 300px;height: auto;background: black;
+    padding: 10px;z-index: 16;bottom: 30%;left: 70%;border: #FFF 1px solid;display: none;
+  }
+  #indonesia {
+    position: absolute;bottom:35%;left: 77%;width:50px
+  }
+  .indonesia-flag-img {
+    max-width:100%;height: auto
+  }
+  .indo {
+    position: absolute;width: 300px;height: auto;bottom: 20%;left:70%;
+    background: black;padding: 10px;z-index: 16;border: #FFF 1px solid;display: none;
+  }
+  #japan {
+    position: absolute;bottom:59%;left: 80%;width:50px
+  }
+  .japan-flag-img {
+    max-width:100%;height: auto
+  }
+  .jap {
+    position: absolute;width: 300px;height: auto;bottom:56%;left: 70%;
+    background: black;padding: 10px;z-index: 18;border: #FFF 1px solid;display: none;
+  }
+  #china {
+    position: absolute;bottom:55%;left: 70%;width:50px
+  }
+
+  .china-flag-img {
+    max-width:100%;height: auto;
+  }
+
+  .chi {
+    position: absolute;width: 300px;height: auto;z-index: 20;
+    background: black;padding: 10px;bottom: 70%;left: 66%;border: #FFF 1px solid;display: none;
+  }
+
+
+
+  .countries-bg {
+    position: relative;background: url(../images/Slice/Map/world-map.png) center center;
+    background-size: cover;height: 100vh
+  }
+
+}
