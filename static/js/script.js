@@ -349,67 +349,136 @@ $(window).on('resize', function() {
 	$('header').css('height', winDowHeight);
 });
 
-/* ---------------------------------------------------------------------- */
-/*	map 
-/* ---------------------------------------------------------------------- */
-function notshowme(){
-	$('.hovdiv').css("display","none");
-}
+		function notshowme(){
+		$('.hovdiv').css("display","none");
+		}
 
-$("#egypt").on("click",function(){
-	$(".eg").toggle()
-});
-$("#saudi").on("click",function(){
-	$(".sa").toggle()
-});
-$("#qatar").on("click",function(){
-	$(".qa").toggle()
-});
-$("#algeria").on("click",function(){
-	$(".al").toggle()
-});
-$("#tunisia").on("click",function(){
-	$(".tu").toggle()
-});
-$("#morocco").on("click",function(){
-	$(".mo").toggle()
-});
-$("#south-africa").on("click",function(){
-	$(".sou").toggle()
-});
-$("#uae").on("click",function(){
-	$(".ua").toggle()
-});
-$("#brazil").on("click",function(){
-	$(".bra").toggle()
-});
-$("#argentina").on("click",function(){
-	$(".arg").toggle()
-});
-$("#canada").on("click",function(){
-	$(".can").toggle()
-});
-$("#usa").on("click",function(){
-	$(".us").toggle()
-});
-$("#australia").on("click",function(){
-	$(".au").toggle()
-});
-$("#singapore").on("click",function(){
-	$(".sin").toggle()
-});
-$("#india").on("click",function(){
-	$(".in").toggle()
-});
-$("#malaysia").on("click",function(){
-	$(".mal").toggle()
-});
-$("#indonesia").on("click",function(){
-	$(".indo").toggle()
-});
-$("#japan").on("click",function(){
-	$(".jap").toggle()
-});
-$("#china").on("click",function(){
-	$(".chi").toggle()
-});
+		$("#Egypt").on("click",function(){
+			$(".eg").toggle()
+		});
+		$("#Saudi").on("click",function(){
+			$(".sa").toggle()
+		});
+		$("#Qatar").on("click",function(){
+			$(".qa").toggle()
+		});
+		$("#Algeria").on("click",function(){
+			$(".al").toggle()
+		});
+		$("#Tunisia").on("click",function(){
+			$(".tu").toggle()
+		});
+		$("#Morocco").on("click",function(){
+			$(".mo").toggle()
+		});
+		$("#South-Africa").on("click",function(){
+			$(".sou").toggle()
+		});
+		$("#Uae").on("click",function(){
+			$(".ua").toggle()
+		});
+		$("#Brazil").on("click",function(){
+			$(".bra").toggle()
+		});
+		$("#Argentina").on("click",function(){
+			$(".arg").toggle()
+		});
+		$("#Canada").on("click",function(){
+			$(".can").toggle()
+		});
+		$("#USA").on("click",function(){
+			$(".us").toggle()
+		});
+		$("#Australia").on("click",function(){
+			$(".au").toggle()
+		});
+		$("#Singapore").on("click",function(){
+			$(".sin").toggle()
+		});
+		$("#India").on("click",function(){
+			$(".in").toggle()
+		});
+		$("#Malaysia").on("click",function(){
+			$(".mal").toggle()
+		});
+		$("#Indonesia").on("click",function(){
+			$(".indo").toggle()
+		});
+		$("#Japan").on("click",function(){
+			$(".jap").toggle()
+		});
+		$("#China").on("click",function(){
+			$(".chi").toggle()
+		});
+		$("#Russia").on("click",function(){
+			$(".ru").toggle()
+		});
+		$("#Greece").on("click",function(){
+			$(".gr").toggle()
+		});
+		$("#Italy").on("click",function(){
+			$(".ita").toggle()
+		});
+		$("#Spain").on("click",function(){
+			$(".spa").toggle()
+		});
+		$("#Portugal").on("click",function(){
+			$(".por").toggle()
+		});
+		$("#France").on("click",function(){
+			$(".fra").toggle()
+		});
+		$("#Ireland").on("click",function(){
+			$(".irl").toggle()
+		});
+		$("#Dach").on("click",function(){
+			$(".dach").toggle()
+		});
+		$("#Czech").on("click",function(){
+			$(".cz").toggle()
+		});
+		$("#Poland").on("click",function(){
+			$(".pol").toggle()
+		});
+		$("#Netherlands").on("click",function(){
+			$(".neth").toggle()
+		});
+		$("#United-Kingdom").on("click",function(){
+			$(".uk").toggle()
+		});
+		$("#Thailand").on("click",function(){
+			$(".thai").toggle()
+		});
+		$("#Ukraine").on("click",function(){
+			$(".ukr").toggle()
+		});
+		$("#Croatia").on("click",function(){
+			$(".cro").toggle()
+		});
+		$("#Norway").on("click",function(){
+			$(".nor").toggle()
+		});
+		$("#Sweden").on("click",function(){
+			$(".swed").toggle()
+		});
+		$("#Denmark").on("click",function(){
+			$(".den").toggle()
+		});
+		$("#Serbia").on("click",function(){
+			$(".serb").toggle()
+		});
+		$("#Bosnia-Herze").on("click",function(){
+			$(".bos").toggle()
+		});
+		$("#Romania").on("click",function(){
+			$(".rom").toggle()
+		});
+		$("#Hungary").on("click",function(){
+			$(".hun").toggle()
+		});
+		$("#Belarus").on("click",function(){
+			$(".bela").toggle()
+		});
+		$("#Finland").on("click",function(){
+			$(".fela").toggle()
+		});

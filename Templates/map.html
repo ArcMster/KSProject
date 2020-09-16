@@ -1,8 +1,8 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en" class="no-js">
 <head>
-	{% load static %}
 	<title>Map</title>
+	{% load static %}
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=4">
@@ -47,327 +47,459 @@
 				<div class="border-line-box"></div>
 				<div class="page-box-title">
 					<div class="container" style="padding-bottom: 40%">
-<!-- 						<h1>Check out The map</h1>
-						<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit ...</p>
- -->					</div>
+ 					</div>
 				</div>
-			</section>			
-			<div  class=" countries-bg">
-				<div class="countries">
-			
-			<!--Egypt-->
+			</section>	
 
-					<div class="egypt flag" id="egypt">
-						<img src="{% static 'images/Slice/Map/flags/egypt-flag1.png' %}" alt="egypt flag" class="egypt-flag-img">
-					</div>
+			<!--************************* MAP Countries ***************************************-->
+			<div style="position: relative;">	
+				<img src="{% static 'images/Slice/Map/map.png' %}" usemap="#image-map" style="max-width: 100%">
+				<map name="image-map" >
+				    <area alt="South-Africa" title="South-Africa" coords="748,711,776,706,796,679,756,679,743,694,743,690,781,670,743,694,774,674,753,690" shape="poly" id="South-Africa">
+				    <area alt="USA" title="USA" coords="230,390,285,387,331,386,356,395,379,410,398,414,414,416,398,447,384,458,349,468,309,471,283,461,261,457,247,444,230,432" shape="poly" id="USA">
+				    <area alt="Brazil" title="Brazil" coords="490,706,548,601,454,567,416,600,478,648" shape="poly" id="Brazil">
+				    <area alt="Argentina" title="Argentina" coords="407,781,423,679,465,687,468,719,433,787" shape="poly" id="Argentina">
+				    <area alt="Australia" title="Australia" coords="1125,645,1232,690,1197,627,1145,628,1091,663,1098,715,1147,701,1170,715,1211,728,1231,705" shape="poly" id="Australia">
+				    <area alt="Saudi" title="Saudi" coords="806,467,827,458,873,511,832,519" shape="poly" id="Saudi">
+				    <area alt="India" title="India" coords="961,541,938,501,954,470,1000,489" shape="poly" id="India">
+				    <area alt="Japan" title="Japan" coords="1151,454,1180,426,1187,447,1152,463" shape="poly" id="Japan">
+				    <area alt="Russia" title="Russia" coords="966,258,1032,371,1298,324,1184,268,1082,254,1027,235,996,245,981,253" shape="poly" id="Russia">
+				    <area alt="Greece" title="Greece" coords="762,436,753,427,761,421,769,430" shape="poly" id="Greece">
+				    <area alt="Egypt" title="Egypt" coords="771,459,771,496,803,497,797,459" shape="poly" id="Egypt">
+				    <area alt="Uae" title="Uae" coords="889,484,13" shape="circle" id="Uae">
+				    <area alt="Qatar" title="Qatar" coords="867,480,11" shape="circle" id="Qatar">
+				    <area alt="Italy" title="Italy" coords="732,434,748,427,723,400,714,408" shape="poly" id="Italy">
+				    <area alt="Algeria" title="Algeria" coords="723,496,712,501,698,503,673,492,661,487,651,479,661,474,669,470,677,462,681,458,683,450,691,447,699,441,707,449,712,454,716,461,718,477,718,485,714,470,716,474" shape="poly" id="Algeria">
+				    <area alt="Moroco" title="Moroco" coords="634,474,640,466,642,458,647,454,654,448,665,448,673,452,664,457,659,463,650,465,643,474" shape="poly" id="Morocco">
+				    <area alt="Tunisia" title="Tunisia" coords="731,461,720,462,709,445,720,439" shape="poly" id="Tunisia">
+				    <area alt="Spain" title="Spain" coords="663,436,676,435,681,428,685,421,672,417,664,412,661,422" shape="poly" id="Spain">
+				    <area alt="Portugal" title="Portugal" coords="641,435,651,435,652,417,643,416,649,423,642,423" shape="poly" id="Portugal">
+				    <area alt="France" title="France" coords="664,390,672,387,680,383,690,381,698,386,701,392,704,401,694,407,686,408,676,407" shape="poly" id="France">
+				    <area alt="Canada" title="Canada" coords="414,170,370,174,336,190,294,203,256,218,229,236,211,265,185,276,168,276,168,310,168,323,181,339,203,359,214,368,230,378,248,374,276,373,308,373,354,373,368,378,378,383,394,391,416,391,437,379,452,376,470,372" shape="poly" id="Canada">
+				    <area alt="Ireland" title="Ireland" coords="694,372,698,364,701,373,708,364" shape="poly" id="Ireland">
+				    <area alt="Dach" title="Dach" coords="712,390,710,381,713,372,720,367,726,370,720,379,720,388,722,392,730,392" shape="poly" id="Dach">
+				    <area alt="Czech" title="Czech" coords="736,382,9" shape="circle" id="Czech">
+				    <area alt="Poland" title="Poland" coords="736,361,736,369,744,372,749,376,754,379,758,373,758,364,751,360,736,364" shape="poly" id="Poland">
+				    <area alt="Netherlands" title="Netherlands" coords="650,368,11" shape="circle" id="Netherlands">
+				    <area  alt="United-Kingdom" title="United-Kingdom"  coords="660,348,664,338,670,336,674,343,678,351,681,359,685,368,680,374,665,376,668,361,665,352" shape="poly" id="United-Kingdom">
+				    <area alt="China" title="China" coords="1069,501,1086,498,1100,491,1108,478,1114,467,1114,447,1118,433,1129,423,1141,415,1145,393,1134,384,1125,369,1113,379,1103,385,1095,402,1090,412,1078,415,1065,420,1041,419,1024,418,1006,412,999,399,989,396,984,407,983,415,979,423,970,430,959,433,958,442,981,438,990,447,1003,458,1016,464,1046,463,1055,473" shape="poly" id="China">
+				    <area alt="Singapore" title="Singapore" coords="1059,574,9" shape="circle" id="Singapore">
+				    <area alt="Malaysia" title="Malaysia" coords="1042,559,10" shape="circle" id="Malaysia">
+				    <area alt="Indonesia" title="Indonesia" coords="1074,578,1077,585,1082,591,1089,591,1099,590,1103,582,1105,572,1107,561,1094,564,1085,565,1077,567" shape="poly" id="Indonesia">
+				    <area alt="Thailand" title="Thailand" coords="1034,534,1043,532,1054,527,1055,516,1047,508,1037,506,1029,511,1029,520,1032,525,1042,514" shape="poly" id="Thailand">
+				    <area alt="Ukraine" title="Ukraine" coords="772,385,771,378,781,374,788,376,796,376,802,377,807,381,814,383,816,392,806,394,798,400,789,395,783,387" shape="poly" id="Ukraine">
+				    <area alt="Croatia" title="Croatia"  coords="736,401,7" shape="circle" id="Croatia">
+				    <area alt="Norway" title="Norway" coords="784,261,774,261,765,261,756,263,748,265,743,270,736,276,739,284,752,276,762,274,771,267,780,267,788,266" shape="poly" id="Norway">
+				    <area alt="Sweden" title="Sweden" coords="730,321,730,311,732,303,739,294,745,285,752,280,762,281,761,289,754,299,747,312,741,319" shape="poly" id="Sweden">
+				    <area alt="Denmark" title="Denmark" coords="712,355,712,346,720,341,722,347,720,354" shape="poly" id="Denmark">
+				    <area alt="Serbia" title="Serbia" coords="753,413,753,404,760,409,760,416" shape="poly" id="Serbia">
+				    <area alt="Bosnia-Herze" title="Bosnia-Herze" coords="744,413,4" shape="circle" id="Bosnia-Herze">
+				    <area alt="Romania" title="Romania" coords="760,401,767,391,770,392,779,394,781,404,774,408,766,407" shape="poly" id="Romania">
+				    <area alt="Hungary" title="Hungary" coords="744,390,753,388,757,394,749,399" shape="poly" id="Hungary">
+				    <area  alt="Belarus" title="Belarus" coords="771,360,776,355,785,352,791,357,792,364,787,369,778,369,770,368" shape="poly" id="Belarus">
+				    <area  alt="Finland" title="Finland" coords="766,277,774,275,780,279,781,286,784,293,784,299,785,306,788,312,783,319,776,325,767,326,765,315,767,305,769,296,767,286,776,297" shape="poly" id="Finland">
+				</map>
 
-					<div class="eg hovdiv">
-						<h2 class="text-primary p-3 " style="float:left" id="count">EGYPT</h2>
-						<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
-						<span class="clearfix"></span>
-						<h6 class="text-white " id="desc">lorem ipsum</h6>
-						<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
-						<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
-						<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
-					</div>
-
-			<!--Saudi-->
-
-					<div class="saudi flag" id="saudi">
-						<img src="{% static 'images/Slice/Map/flags/saudi-flag1.png' %}" class="saudi-flag-img" alt="saudi flag">
-					</div>
-
-					<div class="sa hovdiv">
-						<h2 class="text-primary p-3 " style="float:left" id="count">SAUDI ARABIA</h2>
-						<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
-						<span class="clearfix"></span>
-						<h6 class="text-white " id="desc">lorem ipsum</h6>
-						<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
-						<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
-						<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
-					</div>
-
-			<!--qatar-->
-					<div class="qatar flag" id="qatar">
-						<img src="{% static 'images/Slice/Map/flags/qatar-flag1.png' %}" class = "qatar-flag-img" alt="qatar flag">
-					</div>
-
-					<div class="qa hovdiv">
-						<h2 class="text-primary p-3 " style="float:left" id="count">QATAR</h2>
-						<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
-						<span class="clearfix"></span>
-						<h6 class="text-white " id="desc">lorem ipsum</h6>
-						<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
-						<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
-						<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
-					</div>
-
-			<!--algeria-->
-					<div class="algeria flag" id="algeria">
-						<img src="{% static 'images/Slice/Map/flags/algeria-flag1.png' %}" class="algeria-flag-img"alt="algeria flag">
-					</div>
-
-					<div class="al hovdiv">
-						<h2 class="text-primary p-3 " style="float:left" id="count">ALGERIA</h2>
-						<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
-						<span class="clearfix"></span>
-						<h6 class="text-white " id="desc">lorem ipsum</h6>
-						<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
-						<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
-						<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
-					</div>
-
-			<!--tunisia-->
-					<div class="tunisia flag" id="tunisia">
-						<img src="{% static 'images/Slice/Map/flags/tunisia-flag1.png' %}" class="tunisia-flag-img" alt="tunisia flag">
-					</div>
-
-					<div class="tu hovdiv">
-						<h2 class="text-primary p-3 " style="float:left" id="count">TUNISIA</h2>
-						<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
-						<span class="clearfix"></span>
-						<h6 class="text-white " id="desc">lorem ipsum</h6>
-						<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
-						<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
-						<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
-					</div>
-
-			<!--morocco-->
-					<div class="morocco flag" id="morocco">
-						<img src="{% static 'images/Slice/Map/flags/morocco-flag1.png' %}" class="morocco-flag-img" alt="morocco flag">
-					</div>
-
-					<div class="mo hovdiv">
-						<h2 class="text-primary p-3 " style="float:left" id="count">MOROCCO</h2>
-						<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
-						<span class="clearfix"></span>
-						<h6 class="text-white " id="desc">lorem ipsum</h6>
-						<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
-						<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
-						<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
-					</div>
-
-			<!--south-africa-->
-
-					<div class="south-africa flag" id="south-africa">
-						<img src="{% static 'images/Slice/Map/flags/south-africa-flag1.png' %}" class="south-africa-flag-img" alt="south-africa flag">
-					</div>
-					<div class="sou hovdiv">
-						<h2 class="text-primary p-3 " style="float:left" id="count">SOUTH-AFRICA</h2>
-						<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
-						<span class="clearfix"></span>
-						<h6 class="text-white " id="desc">lorem ipsum</h6>
-						<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
-						<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
-						<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
-					</div>
-
-			<!--uae-->
-					<div class="uae flag" id="uae">
-						<img src="{% static 'images/Slice/Map/flags/uae-flag1.png' %}" class="uae-flag-img" alt="uae flag">
-					</div>
-
-					<div class="ua hovdiv">
-						<h2 class="text-primary p-3 " style="float:left" id="count">UAE</h2>
-						<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
-						<span class="clearfix"></span>
-						<h6 class="text-white " id="desc">lorem ipsum</h6>
-						<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
-						<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
-						<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
-					</div>
-
-			<!--brazil-->
-
-					<div class="brazil flag" id="brazil">
-						<img src="{% static 'images/Slice/Map/flags/brazil-flag1.png' %}" class="brazil-flag-img" alt="brazil flag">
-					</div>
-
-					<div class="bra hovdiv">
-						<h2 class="text-primary p-3 " style="float:left" id="count">BRAZIL</h2>
-						<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
-						<span class="clearfix"></span>
-						<h6 class="text-white " id="desc">lorem ipsum</h6>
-						<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
-						<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
-						<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
-					</div>
-
-			<!--argentina-->
-
-					<div class="argentina flag" id="argentina">
-						<img src="{% static 'images/Slice/Map/flags/argentina-flag1.png' %}" class="argentina-flag-img" alt="argentina flag">
-					</div>
-
-					<div class="arg hovdiv">
-						<h2 class="text-primary p-3 " style="float:left" id="count">ARGENTINA</h2>
-						<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
-						<span class="clearfix"></span>
-						<h6 class="text-white " id="desc">lorem ipsum</h6>
-						<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
-						<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
-						<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
-					</div>
-
-			<!--canada-->
-					<div class="canada flag" id="canada">
-						<img src="{% static 'images/Slice/Map/flags/canada-flag1.png' %}" class="canada-flag-img" alt="canada flag">
-					</div>
-
-					<div class="can hovdiv">
-						<h2 class="text-primary p-3 " style="float:left" id="count">CANADA</h2>
-						<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
-						<span class="clearfix"></span>
-						<h6 class="text-white " id="desc">lorem ipsum</h6>
-						<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
-						<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
-						<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
-					</div>
-
-			<!--usa-->
-					<div class="usa flag" id="usa">
-						<img src="{% static 'images/Slice/Map/flags/usa-flag1.png' %}" alt="usa flag" class="usa-flag-img">
-					</div>
-
-					<div class="us hovdiv">
-						<h2 class="text-primary p-3 " style="float:left" id="count">USA</h2>
-						<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
-						<span class="clearfix"></span>
-						<h6 class="text-white " id="desc">lorem ipsum</h6>
-						<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
-						<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
-						<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
-					</div>
-
-			<!--australia-->
-
-					<div class="australia flag" id="australia">
-						<img src="{% static 'images/Slice/Map/flags/australia-flag1.png' %}" class="australia-flag-img" alt="australia flag" style="">
-					</div>
-
-					<div class="au hovdiv">
-						<h2 class="text-primary p-3 " style="float:left" id="count">AUSTRALIA</h2>
-						<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
-						<span class="clearfix"></span>
-						<h6 class="text-white " id="desc">lorem ipsum</h6>
-						<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
-						<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
-						<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
-					</div>
-
-			<!--singapore-->
-
-					<div class="singapore flag" id="singapore">
-						<img src="{% static 'images/Slice/Map/flags/singapore=flag1.png' %}" class="singapore-flag-img" alt="singapore flag">
-					</div>
-
-					<div class="sin hovdiv">
-						<h2 class="text-primary p-3 " style="float:left" id="count">SINGAPORE</h2>
-						<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
-						<span class="clearfix"></span>
-						<h6 class="text-white " id="desc">lorem ipsum</h6>
-						<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
-						<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
-						<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
-					</div>
-
-			<!--india-->
-
-					<div class="india flag" id="india">
-						<img src="{% static 'images/Slice/Map/flags/india-flag1.png' %}" class="india-flag-img" alt="india flag">
-					</div>
-
-					<div class="in hovdiv">
-						<h2 class="text-primary p-3 " style="float:left" id="count">INDIA</h2>
-						<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
-						<span class="clearfix"></span>
-						<h6 class="text-white " id="desc">lorem ipsum</h6>
-						<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
-						<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
-						<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
-					</div>
-
-			<!--malaysia-->
-
-					<div class="malaysia flag" id="malaysia">
-						<img src="{% static 'images/Slice/Map/flags/malaysia-flag1.png' %}" class="malaysia-flag-img" alt="malaysia flag" >
-					</div>
-
-					<div class="mal hovdiv">
-						<h2 class="text-primary p-3 " style="float:left" id="count">MALAYSIA</h2>
-						<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
-						<span class="clearfix"></span>
-						<h6 class="text-white " id="desc">lorem ipsum</h6>
-						<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
-						<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
-						<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
-					</div>
-
-			<!--indonesia-->
-
-					<div class="indonesia flag" id="indonesia">
-						<img src="{% static 'images/Slice/Map/flags/indonesia-flag1.png' %}" class="indonesia-flag-img" alt="indonesia flag" >
-					</div>
-					<div class="indo hovdiv">
-						<h2 class="text-primary p-3 " style="float:left" id="count">INDONESIA</h2>
-						<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
-						<span class="clearfix"></span>
-						<h6 class="text-white " id="desc">lorem ipsum</h6>
-						<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
-						<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
-						<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
-					</div>
-
-
-			<!--japan-->
-
-					<div class="japan flag" id="japan">
-						<img src="{% static 'images/Slice/Map/flags/japan-flag1.png' %}" class="japan-flag-img" alt="japan flag">
-					</div>
-
-					<div class="jap hovdiv">
-						<h2 class="text-primary p-3 " style="float:left" id="count">JAPAN</h2>
-						<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
-						<span class="clearfix"></span>
-						<h6 class="text-white " id="desc">lorem ipsum</h6>
-						<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
-						<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
-						<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
-					</div>
-
-
-			<!--china-->
-
-					<div class="china flag" id="china">
-						<img src="{% static 'images/Slice/Map/flags/china-flag1.png' %}" class="china-flag-img" alt="china flag">
-					</div>
-					<div class="chi hovdiv">
-						<h2 class="text-primary p-3 " style="float:left" id="count">CHINA</h2>
-						<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
-						<span class="clearfix"></span>
-						<h6 class="text-white " id="desc">lorem ipsum</h6>
-						<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
-						<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
-						<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
-					</div>
+				<!-- ************************ Map countries Cards ****************************-->
+		    	<div class="eg hovdiv">
+					<h2 class="text-primary p-3 " style="float:left" id="count">EGYPT</h2>
+					<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
+					<span class="clearfix"></span>
+					<h6 class="text-white " id="desc">lorem ipsum</h6>
+					<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
+					<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
+					<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
 				</div>
-			</div>
-
-<!-- 
-			<div class="mobile-bg visible-sm visible-xs hidden-md hidden-xl hidden-lg">
-				<img src="images/Slice/Map/map.jpg" style="  display: block;height: 40vh;object-fit: contain;
-" class="img-responsive">
-			</div>
- -->
+		    	<div class="sa hovdiv">
+					<h2 class="text-primary p-3 " style="float:left" id="count">Saudi Arabia</h2>
+					<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
+					<span class="clearfix"></span>
+					<h6 class="text-white " id="desc">lorem ipsum</h6>
+					<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
+					<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
+					<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
+				</div>
+		    	<div class="sou hovdiv">
+					<h2 class="text-primary p-3 " style="float:left" id="count">South-Africa</h2>
+					<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
+					<span class="clearfix"></span>
+					<h6 class="text-white " id="desc">lorem ipsum</h6>
+					<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
+					<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
+					<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
+				</div>
+		    	<div class="us hovdiv">
+					<h2 class="text-primary p-3 " style="float:left" id="count">USA</h2>
+					<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
+					<span class="clearfix"></span>
+					<h6 class="text-white " id="desc">lorem ipsum</h6>
+					<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
+					<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
+					<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
+				</div>
+		    	<div class="bra hovdiv">
+					<h2 class="text-primary p-3 " style="float:left" id="count">Brazil</h2>
+					<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
+					<span class="clearfix"></span>
+					<h6 class="text-white " id="desc">lorem ipsum</h6>
+					<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
+					<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
+					<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
+				</div>
+		    	<div class="arg hovdiv">
+					<h2 class="text-primary p-3 " style="float:left" id="count">Argentina</h2>
+					<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
+					<span class="clearfix"></span>
+					<h6 class="text-white " id="desc">lorem ipsum</h6>
+					<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
+					<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
+					<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
+				</div>
+		    	<div class="au hovdiv">
+					<h2 class="text-primary p-3 " style="float:left" id="count">Australia</h2>
+					<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
+					<span class="clearfix"></span>
+					<h6 class="text-white " id="desc">lorem ipsum</h6>
+					<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
+					<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
+					<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
+				</div>
+		    	<div class="in hovdiv">
+					<h2 class="text-primary p-3 " style="float:left" id="count">India</h2>
+					<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
+					<span class="clearfix"></span>
+					<h6 class="text-white " id="desc">lorem ipsum</h6>
+					<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
+					<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
+					<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
+				</div>
+		    	<div class="jap hovdiv">
+					<h2 class="text-primary p-3 " style="float:left" id="count">Japan</h2>
+					<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
+					<span class="clearfix"></span>
+					<h6 class="text-white " id="desc">lorem ipsum</h6>
+					<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
+					<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
+					<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
+				</div>
+		    	<div class="ru hovdiv">
+					<h2 class="text-primary p-3 " style="float:left" id="count">Russia</h2>
+					<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
+					<span class="clearfix"></span>
+					<h6 class="text-white " id="desc">lorem ipsum</h6>
+					<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
+					<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
+					<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
+				</div>
+		    	<div class="gr hovdiv">
+					<h2 class="text-primary p-3 " style="float:left" id="count">Greece</h2>
+					<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
+					<span class="clearfix"></span>
+					<h6 class="text-white " id="desc">lorem ipsum</h6>
+					<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
+					<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
+					<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
+				</div>
+		    	<div class="ua hovdiv">
+					<h2 class="text-primary p-3 " style="float:left" id="count">Uae</h2>
+					<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
+					<span class="clearfix"></span>
+					<h6 class="text-white " id="desc">lorem ipsum</h6>
+					<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
+					<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
+					<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
+				</div>
+		    	<div class="qa hovdiv">
+					<h2 class="text-primary p-3 " style="float:left" id="count">Qatar</h2>
+					<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
+					<span class="clearfix"></span>
+					<h6 class="text-white " id="desc">lorem ipsum</h6>
+					<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
+					<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
+					<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
+				</div>
+		    	<div class="ita hovdiv">
+					<h2 class="text-primary p-3 " style="float:left" id="count">Italy</h2>
+					<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
+					<span class="clearfix"></span>
+					<h6 class="text-white " id="desc">lorem ipsum</h6>
+					<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
+					<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
+					<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
+				</div>
+		    	<div class="al hovdiv">
+					<h2 class="text-primary p-3 " style="float:left" id="count">Algeria</h2>
+					<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
+					<span class="clearfix"></span>
+					<h6 class="text-white " id="desc">lorem ipsum</h6>
+					<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
+					<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
+					<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
+				</div>
+		    	<div class="mo hovdiv">
+					<h2 class="text-primary p-3 " style="float:left" id="count">Moroco</h2>
+					<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
+					<span class="clearfix"></span>
+					<h6 class="text-white " id="desc">lorem ipsum</h6>
+					<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
+					<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
+					<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
+				</div>
+		    	<div class="tu hovdiv">
+					<h2 class="text-primary p-3 " style="float:left" id="count">Tunisia</h2>
+					<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
+					<span class="clearfix"></span>
+					<h6 class="text-white " id="desc">lorem ipsum</h6>
+					<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
+					<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
+					<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
+				</div>
+		    	<div class="spa hovdiv">
+					<h2 class="text-primary p-3 " style="float:left" id="count">Spain</h2>
+					<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
+					<span class="clearfix"></span>
+					<h6 class="text-white " id="desc">lorem ipsum</h6>
+					<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
+					<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
+					<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
+				</div>
+		    	<div class="por hovdiv">
+					<h2 class="text-primary p-3 " style="float:left" id="count">Portugal</h2>
+					<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
+					<span class="clearfix"></span>
+					<h6 class="text-white " id="desc">lorem ipsum</h6>
+					<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
+					<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
+					<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
+				</div>
+		    	<div class="fra hovdiv">
+					<h2 class="text-primary p-3 " style="float:left" id="count">France</h2>
+					<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
+					<span class="clearfix"></span>
+					<h6 class="text-white " id="desc">lorem ipsum</h6>
+					<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
+					<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
+					<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
+				</div>
+		    	<div class="can hovdiv">
+					<h2 class="text-primary p-3 " style="float:left" id="count">Canada</h2>
+					<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
+					<span class="clearfix"></span>
+					<h6 class="text-white " id="desc">lorem ipsum</h6>
+					<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
+					<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
+					<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
+				</div>
+		    	<div class="irl hovdiv">
+					<h2 class="text-primary p-3 " style="float:left" id="count">Ireland</h2>
+					<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
+					<span class="clearfix"></span>
+					<h6 class="text-white " id="desc">lorem ipsum</h6>
+					<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
+					<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
+					<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
+				</div>
+		    	<div class="dach hovdiv">
+					<h2 class="text-primary p-3 " style="float:left" id="count">Dach</h2>
+					<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
+					<span class="clearfix"></span>
+					<h6 class="text-white " id="desc">lorem ipsum</h6>
+					<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
+					<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
+					<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
+				</div>
+		    	<div class="cz hovdiv">
+					<h2 class="text-primary p-3 " style="float:left" id="count">Czech</h2>
+					<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
+					<span class="clearfix"></span>
+					<h6 class="text-white " id="desc">lorem ipsum</h6>
+					<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
+					<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
+					<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
+				</div>
+		    	<div class="pol hovdiv">
+					<h2 class="text-primary p-3 " style="float:left" id="count">Poland</h2>
+					<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
+					<span class="clearfix"></span>
+					<h6 class="text-white " id="desc">lorem ipsum</h6>
+					<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
+					<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
+					<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
+				</div>
+		    	<div class="neth hovdiv">
+					<h2 class="text-primary p-3 " style="float:left" id="count">Netherlands</h2>
+					<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
+					<span class="clearfix"></span>
+					<h6 class="text-white " id="desc">lorem ipsum</h6>
+					<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
+					<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
+					<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
+				</div>
+		    	<div class="uk hovdiv">
+					<h2 class="text-primary p-3 " style="float:left" id="count">United-Kingdom</h2>
+					<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
+					<span class="clearfix"></span>
+					<h6 class="text-white " id="desc">lorem ipsum</h6>
+					<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
+					<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
+					<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
+				</div>
+		    	<div class="chi hovdiv">
+					<h2 class="text-primary p-3 " style="float:left" id="count">China</h2>
+					<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
+					<span class="clearfix"></span>
+					<h6 class="text-white " id="desc">lorem ipsum</h6>
+					<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
+					<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
+					<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
+				</div>
+		    	<div class="sin hovdiv">
+					<h2 class="text-primary p-3 " style="float:left" id="count">Singapore</h2>
+					<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
+					<span class="clearfix"></span>
+					<h6 class="text-white " id="desc">lorem ipsum</h6>
+					<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
+					<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
+					<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
+				</div>
+		    	<div class="mal hovdiv">
+					<h2 class="text-primary p-3 " style="float:left" id="count">Malaysia</h2>
+					<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
+					<span class="clearfix"></span>
+					<h6 class="text-white " id="desc">lorem ipsum</h6>
+					<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
+					<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
+					<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
+				</div>
+		    	<div class="indo hovdiv">
+					<h2 class="text-primary p-3 " style="float:left" id="count">Indonesia</h2>
+					<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
+					<span class="clearfix"></span>
+					<h6 class="text-white " id="desc">lorem ipsum</h6>
+					<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
+					<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
+					<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
+				</div>
+		    	<div class="thai hovdiv">
+					<h2 class="text-primary p-3 " style="float:left" id="count">Thailand</h2>
+					<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
+					<span class="clearfix"></span>
+					<h6 class="text-white " id="desc">lorem ipsum</h6>
+					<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
+					<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
+					<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
+				</div>
+		    	<div class="ukr hovdiv">
+					<h2 class="text-primary p-3 " style="float:left" id="count">Ukraine</h2>
+					<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
+					<span class="clearfix"></span>
+					<h6 class="text-white " id="desc">lorem ipsum</h6>
+					<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
+					<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
+					<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
+				</div>
+		    	<div class="cro hovdiv">
+					<h2 class="text-primary p-3 " style="float:left" id="count">Croatia</h2>
+					<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
+					<span class="clearfix"></span>
+					<h6 class="text-white " id="desc">lorem ipsum</h6>
+					<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
+					<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
+					<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
+				</div>
+		    	<div class="nor hovdiv">
+					<h2 class="text-primary p-3 " style="float:left" id="count">Norway</h2>
+					<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
+					<span class="clearfix"></span>
+					<h6 class="text-white " id="desc">lorem ipsum</h6>
+					<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
+					<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
+					<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
+				</div>
+		    	<div class="swed hovdiv">
+					<h2 class="text-primary p-3 " style="float:left" id="count">Sweden</h2>
+					<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
+					<span class="clearfix"></span>
+					<h6 class="text-white " id="desc">lorem ipsum</h6>
+					<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
+					<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
+					<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
+				</div>
+		    	<div class="den hovdiv">
+					<h2 class="text-primary p-3 " style="float:left" id="count">Denmark</h2>
+					<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
+					<span class="clearfix"></span>
+					<h6 class="text-white " id="desc">lorem ipsum</h6>
+					<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
+					<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
+					<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
+				</div>
+		    	<div class="serb hovdiv">
+					<h2 class="text-primary p-3 " style="float:left" id="count">Serbia</h2>
+					<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
+					<span class="clearfix"></span>
+					<h6 class="text-white " id="desc">lorem ipsum</h6>
+					<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
+					<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
+					<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
+				</div>
+		    	<div class="bos hovdiv">
+					<h2 class="text-primary p-3 " style="float:left" id="count">Bosnia-Herze</h2>
+					<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
+					<span class="clearfix"></span>
+					<h6 class="text-white " id="desc">lorem ipsum</h6>
+					<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
+					<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
+					<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
+				</div>
+		    	<div class="rom hovdiv">
+					<h2 class="text-primary p-3 " style="float:left" id="count">Romania</h2>
+					<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
+					<span class="clearfix"></span>
+					<h6 class="text-white " id="desc">lorem ipsum</h6>
+					<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
+					<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
+					<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
+				</div>
+		    	<div class="hun hovdiv">
+					<h2 class="text-primary p-3 " style="float:left" id="count">Hungary</h2>
+					<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
+					<span class="clearfix"></span>
+					<h6 class="text-white " id="desc">lorem ipsum</h6>
+					<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
+					<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
+					<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
+				</div>
+		    	<div class="bela hovdiv">
+					<h2 class="text-primary p-3 " style="float:left" id="count">Belarus</h2>
+					<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
+					<span class="clearfix"></span>
+					<h6 class="text-white " id="desc">lorem ipsum</h6>
+					<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
+					<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
+					<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
+				</div>
+		    	<div class="fela hovdiv">
+					<h2 class="text-primary p-3 " style="float:left" id="count">Finland</h2>
+					<span class="text-white" style="float: right; cursor: pointer;" onclick="notshowme()">&times;</span>
+					<span class="clearfix"></span>
+					<h6 class="text-white " id="desc">lorem ipsum</h6>
+					<h6 class="text-primary">POPULATION: <span class="text-white" id="pop">328.2 MILLION(2019)</span></h6>	
+					<h6 class="text-primary">WORLDCUPS WON: <span class="text-white" id="cups">04</span></h6>
+					<h6 class="text-primary">MOST SUCCESSFUL CLUBS: <span class="text-white" id="clubs">Club1, Club2</span></h6>	
+				</div>
+			</div>	
 		</div>
 		<!-- End content -->
-
 	</div>
 	<!-- End Container -->
-
-	<script src="{% static 'js/genix-plugins.min.js' %}"></script>
-	<script type="text/javascript" src="{% static 'js/jquery.countTo.js' %}"></script>
-	<script type="text/javascript" src="{% static 'js/gmap3.min.js' %}"></script>
-	<script type="text/javascript" src="{% static 'js/script.js' %}"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="{% static 'js/imageMapResizer.min.js' %}"></script>
+	<script src="{% static 'js/script.js' %}"></script>
+	<script>
+	$(document).ready(function() {
+	    $('map').imageMapResize();
+	});
+	</script>
 </body>
 </html>

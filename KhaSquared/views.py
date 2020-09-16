@@ -76,4 +76,4 @@ def userinput(request):
         smtplibObj.quit()
         print('Email has been send')        
 
-    return render(request,'contact1.html')
+    return render(request,'contact1.html',{'name':name})

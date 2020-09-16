@@ -44,7 +44,7 @@
 			<!-- background image 
 				================================================== -->
 			<div>
-				<img class="img-responsive" src="{% static 'images/Slice/contact-Us/contact-us-banner-image.png' %}" alt="contact-us-banner">
+				<img class="img-responsive" src="{% static 'images/Slice/contact-Us/Contact-us-banner-image.png' %}" alt="contact-us-banner">
 			</div>
 			<!-- End background -->
 			<!-- contact-form-section 
@@ -60,18 +60,19 @@
 									{% csrf_token %}
 									<div class="row">
 										<div class="col-sm-8">
-											<input name="name" id="name" type="text" placeholder="Name*">
+											<input name="name" id="name" type="text" placeholder="Name*" required="" data-msg-required="This field is required." >
 										</div>
 										<div class="col-sm-8">
-											<input name="mail" id="mail" type="text" placeholder="Email*">
+											<input name="mail" id="mail" type="text" placeholder="Email*" required="" data-msg-required="This field is required." >
 										</div>
 										<div class="col-sm-8">
-											<input name="subject" id="subject" type="text" placeholder="Subject">	
+											<input name="subject" id="subject" type="text" placeholder="Subject" required="" data-msg-required="This field is required." >	
 										</div>
 										<div class="col-sm-8">
-											<textarea name="comment" id="comment" placeholder="Message*"></textarea>
+											<textarea name="comment" id="comment" placeholder="Message*" required="" data-msg-required="This field is required." ></textarea>
 										</div>
 										<div class="col-sm-12">
+											<!--<input type="submit" id="submit_contact" value="Submit Comment"></div>-->
 											<input type="submit" value="Submit Comment"></div>
 										</div>
 									<div id="msg" class="message alert">
